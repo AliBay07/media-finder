@@ -7,6 +7,8 @@ import random
 import uuid
 import base64
 import io
+import rdflib
+import requests
 
 
 class MediaFinder:
@@ -275,13 +277,81 @@ class MediaFinder:
 
         return construct_result, select_result
 
+    def _getDbpediaArtistInfo(self, artist_name: str):
+        """
+        Fetch artist details from DBpedia based on the artist's name.
+
+        :param artist_name: The name of the artist to fetch information for.
+        :return: A tuple of (construct_result, select_result), each in RDF graph or JSON format.
+        """
+        dbpedia_endpoint = "https://dbpedia.org/sparql"
+
+        artist_name_for_request = artist_name.replace(" ", "_")
+
+        construct_query = f"""
+                PREFIX dbo: <http://dbpedia.org/ontology/>
+                PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+                CONSTRUCT {{
+                    <http://dbpedia.org/resource/{artist_name_for_request}> foaf:name ?name ;
+                        dbo:activeYearsStartYear ?activeYearsStartYear ;
+                        dbo:birthDate ?birthDate ;
+                        dbo:birthPlace ?birthPlace ;
+                        dbo:genre ?genre ;
+                        dbo:hometown ?hometown .
+                }}
+                WHERE {{
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> foaf:name ?name . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:activeYearsStartYear ?activeYearsStartYear . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:birthDate ?birthDate . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:birthPlace ?birthPlace . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:genre ?genre . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:hometown ?hometown . }}
+                }}
+                """
+
+        select_query = f"""
+                PREFIX dbo: <http://dbpedia.org/ontology/>
+                PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+                SELECT ?name ?activeYearsStartYear ?birthDate ?birthPlace (GROUP_CONCAT(?genre; separator=", ") AS ?genres) ?hometown
+                WHERE {{
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> foaf:name ?name . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:activeYearsStartYear ?activeYearsStartYear . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:birthDate ?birthDate . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:birthPlace ?birthPlace . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:genre ?genre . }}
+                    OPTIONAL {{ <http://dbpedia.org/resource/{artist_name_for_request}> dbo:hometown ?hometown . }}
+                }}
+                GROUP BY ?name ?activeYearsStartYear ?birthDate ?birthPlace ?hometown
+                """
+
+        response_construct = requests.get(
+            dbpedia_endpoint, params={'query': construct_query, 'format': 'text/turtle'}
+        )
+        response_select = requests.get(
+            dbpedia_endpoint, params={'query': select_query, 'format': 'application/sparql-results+json'}
+        )
+
+        construct_result = rdflib.Graph()
+        select_result = None
+
+        if response_construct.status_code == 200:
+            construct_result.parse(data=response_construct.text, format="turtle")
+
+        if response_select.status_code == 200:
+            select_result = response_select.json()
+
+        return construct_result, select_result
+
     def getArtist(self, filter_var: str, filter_value: str):
         """
-        Generic method to fetch artist details based on a given filter.
+        Generic method to fetch artist details from both the internal database and DBpedia,
+        merging the graphs using the artist name with owl:sameAs or an equivalent.
 
         :param filter_var: The variable to filter on (e.g., "artistName", "artistSpotifyURI").
         :param filter_value: The value to filter by.
-        :return: A tuple of (construct_result, select_result).
+        :return: A tuple of (merged_construct_result, merged_select_result).
         """
         construct_query = f"""
         PREFIX media: <http://mediafinder.org/media/>
@@ -315,13 +385,45 @@ class MediaFinder:
 
         self.sparql.setQuery(construct_query)
         self.sparql.setReturnFormat(JSON)
-        construct_result = self.sparql.query().convert()
+        internal_construct_result = rdflib.Graph()
+        internal_construct_result.parse(data=self.sparql.query().response.read(), format="json-ld")
 
         self.sparql.setQuery(select_query)
         self.sparql.setReturnFormat(JSON)
-        select_result = self.sparql.query().convert()
+        internal_select_result = self.sparql.query().convert()
 
-        return construct_result, select_result
+        if len(internal_select_result["results"]["bindings"]) == 0:
+            return internal_construct_result, internal_select_result
+
+        artist_name = internal_select_result['results']['bindings'][0]['artistName']['value']
+
+        dbpedia_construct_result, dbpedia_select_result = self._getDbpediaArtistInfo(artist_name)
+
+        merged_construct_result = internal_construct_result + dbpedia_construct_result
+        merged_select_result = internal_select_result
+
+        if dbpedia_select_result and "results" in dbpedia_select_result and "bindings" in dbpedia_select_result[
+            "results"]:
+            dbpedia_binding = dbpedia_select_result["results"]["bindings"][0]
+
+            dbpedia_vars = dbpedia_select_result["head"]["vars"]
+            for var in dbpedia_vars:
+                if var not in merged_select_result["head"]["vars"]:
+                    if var != "name":
+                        merged_select_result["head"]["vars"].append(var)
+
+            for internal_binding in merged_select_result["results"]["bindings"]:
+                for key, value in dbpedia_binding.items():
+                    if key not in internal_binding:
+                        internal_binding[key] = value
+                    elif isinstance(internal_binding[key], list):
+                        if value not in internal_binding[key]:
+                            internal_binding[key].append(value)
+                    else:
+                        if internal_binding[key] != value:
+                            internal_binding[key] = [internal_binding[key], value]
+
+        return merged_construct_result, merged_select_result
 
     """
         Methods to get tracks

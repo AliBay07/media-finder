@@ -1,0 +1,10 @@
+streamlit
+rdflib
+pyvis
+Pillow
+SPARQLWrapper
+tensorflow
+opencv-python
+numpy
+requests
+

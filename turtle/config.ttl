@@ -1,0 +1,12 @@
+@prefix fuseki: <http://jena.apache.org/fuseki#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<fuseki:server> 
+    fuseki:dataset <#media-finder-dataset> .
+    
+<#media-finder-dataset> 
+    rdf:type fuseki:DatasetDescription ;
+    fuseki:name "media-finder" ;
+    fuseki:location "/jena-fuseki/databases/media-finder" ;
+    fuseki:datasetType fuseki:TDB2 .
+

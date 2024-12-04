@@ -1,0 +1,2541 @@
+@prefix media: <http://mediafinder.org/media/> .
+@prefix property: <http://mediafinder.org/properties/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+media:Album a rdfs:Class ;
+    rdfs:subClassOf media:Media .
+
+media:Artist a rdfs:Class ;
+    rdfs:subClassOf media:Person .
+
+media:Image a rdfs:Class ;
+    rdfs:subClassOf media:Media .
+
+media:Media a rdfs:Class .
+
+media:Person a rdfs:Class .
+
+media:Track a rdfs:Class ;
+    rdfs:subClassOf media:Media .
+
+media:01901957-5ba6-5a27-89d8-b9878dd10023 a media:Track ;
+    property:trackBelongsToAlbum media:b0bb36d8-b06c-5da9-8442-9713e2fd7896 ;
+    property:trackDuration 130800 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:f5c51965-2b23-5fbf-b525-c352a1ca8ad8 ;
+    property:trackISRC "SE5Q51902467" ;
+    property:trackName "Yuletide Pods" ;
+    property:trackPopularity 9 ;
+    property:trackSpotifyURI "44JYujAyLBlYFoXpoJwDSo" .
+
+media:01f489a7-b00c-597b-ad96-1e2059a6fe1d a media:Track ;
+    property:trackBelongsToAlbum media:526a188f-6c41-5af1-95b0-96841ae6f93c ;
+    property:trackDuration 436333 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:5054c55f-ee75-5498-bb0c-e17602b1331d,
+        media:be5ac170-f2bc-51ad-b9de-f62b6878f392 ;
+    property:trackISRC "INV119300592" ;
+    property:trackName "Bahut Jatate Ho Pyar From Aadmi Khilona Hai" ;
+    property:trackPopularity 45 ;
+    property:trackSpotifyURI "0fg3tcKxZiPI6n5dZa8Dy9" .
+
+media:03613a8f-6055-5f45-b508-f85d4fc63918 a media:Track ;
+    property:trackBelongsToAlbum media:47e2f486-fd2d-5340-8abc-cf840c1ddc6e ;
+    property:trackDuration 538551 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:67f45c4b-aac4-5be6-bdb2-4ed0cafd657f,
+        media:a0dbc18d-4d81-5bec-b729-ea7d6a0852f8,
+        media:d032fa52-066d-5289-95da-3c9a14dd21cc ;
+    property:trackISRC "DET752200068" ;
+    property:trackName "Astronautin - Hernan Cattaneo  Soundexile Remix" ;
+    property:trackPopularity 9 ;
+    property:trackSpotifyURI "7yvIz3Y02CxYDOY7JczOqc" .
+
+media:049880ee-0743-528a-83f2-907732b18c53 a media:Track ;
+    property:trackBelongsToAlbum media:fa9490c4-c382-50ee-8238-4d1ee04744c8 ;
+    property:trackDuration 189600 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:63d7c13c-011d-51da-835b-a5298f83794f ;
+    property:trackISRC "TCACT1605420" ;
+    property:trackName "The Mystic" ;
+    property:trackPopularity 58 ;
+    property:trackSpotifyURI "424GDxARRXRaZ7Mla9EDI2" .
+
+media:08a9392c-7f67-5ef3-ae0c-2b01d01e388f a media:Track ;
+    property:trackBelongsToAlbum media:6c043c6c-6752-53e5-95cf-01137af614ee ;
+    property:trackDuration 293733 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:486d8fa7-eaee-59f8-810f-9417eeb7ac35 ;
+    property:trackISRC "USMC17046303" ;
+    property:trackName "Chains And Things" ;
+    property:trackPopularity 53 ;
+    property:trackSpotifyURI "5x7Oxaa9EEIx9nw17CC5yW" .
+
+media:0af8050d-a620-531f-98b6-a2fc8d0828b0 a media:Track ;
+    property:trackBelongsToAlbum media:f10576c4-a135-5254-a17b-33783d9621ef ;
+    property:trackDuration 40122 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:232341d5-4e40-5338-93b7-1255f55c3ee2 ;
+    property:trackISRC "QM7281466030" ;
+    property:trackName "Social Inequality" ;
+    property:trackPopularity 11 ;
+    property:trackSpotifyURI "17q6rFV6f8G4MKtUg7mWxe" .
+
+media:0d4e5853-a508-52e4-aec2-cc353e5b519c a media:Track ;
+    property:trackBelongsToAlbum media:420d3247-e31c-5a0d-850d-8d85f1330763 ;
+    property:trackDuration 196002 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:ad8f68bd-adc7-5144-a7e3-a3e636af3360 ;
+    property:trackISRC "QMRSZ1800479" ;
+    property:trackName "Hostage" ;
+    property:trackPopularity 48 ;
+    property:trackSpotifyURI "23vSivmGgbH4KpIzhUNCGl" .
+
+media:1182ece4-7ccf-5171-a73b-9d1ea041d6cc a media:Track ;
+    property:trackBelongsToAlbum media:9d800d28-49f1-53c9-91d5-0bdceb7b1677 ;
+    property:trackDuration 510982 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:40f5a123-d20e-5430-aa05-f9c37f0a9040,
+        media:9316ff35-8dad-501d-bdf8-f874fbafbbc5 ;
+    property:trackISRC "QZGLM1934268" ;
+    property:trackName "Melhor Lugar - Ao Vivo" ;
+    property:trackPopularity 3 ;
+    property:trackSpotifyURI "3yc4ioKMDoCW1QwzD5C9oC" .
+
+media:12b98488-9fa8-52f9-ab69-6dc848e3dbb7 a media:Track ;
+    property:trackBelongsToAlbum media:98a44878-b7e9-5a99-bdf3-fece8cc991dd ;
+    property:trackDuration 566293 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:1eb15e7d-e198-52e5-b4c8-293ea24e23b5,
+        media:e5927594-0827-517c-bfc4-945a96f04dbb ;
+    property:trackISRC "GBARK0300024" ;
+    property:trackName "People Hold On feat Lisa Stansfield - 12 Version" ;
+    property:trackPopularity 14 ;
+    property:trackSpotifyURI "0KWHBuP8AItTgQUePYcdvc" .
+
+media:13542005-7e92-5761-8ec8-31a150bb1adc a media:Track ;
+    property:trackBelongsToAlbum media:93090d32-0921-5df1-9bc2-0998b407d91d ;
+    property:trackDuration 212440 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:1d24ebfc-a470-5702-87b6-aabb4a953e13 ;
+    property:trackISRC "GBUM71702483" ;
+    property:trackName "Are You Ready For Love - Remastered" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "3D15FZXmjfna7aFfKmEajd" .
+
+media:17943e04-8492-56ef-a84c-648fde478a04 a media:Track ;
+    property:trackBelongsToAlbum media:71b92a23-8a69-5d52-9d4c-357d4c34918c ;
+    property:trackDuration 208762 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:2b7374de-4777-5616-90b0-5ad974b8418e,
+        media:546f4951-980d-5b08-bfe7-8c351ec632e1,
+        media:a07573a1-8260-5af4-a4ce-8155de5045ed,
+        media:f2fde5a2-feb1-500f-9d7b-0bdbf0ff1a9f ;
+    property:trackISRC "BXKG22200456" ;
+    property:trackName "Linda" ;
+    property:trackPopularity 28 ;
+    property:trackSpotifyURI "3knUp342DsZsUmcY62m1vU" .
+
+media:1c72bf90-e069-5986-b73a-e0f83d9d13cf a media:Track ;
+    property:trackBelongsToAlbum media:9254a7fe-7ab1-5e2f-b488-d7147354db66 ;
+    property:trackDuration 232625 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:dbf6d341-17c1-542f-bb17-2c324761a557 ;
+    property:trackISRC "QM6N22181633" ;
+    property:trackName "eliza" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "6zZNEML6EssNesPUyVMEdB" .
+
+media:1e4bb416-ce16-5d6a-a5ac-3232d20dc825 a media:Track ;
+    property:trackBelongsToAlbum media:77aa5acc-466f-5aec-864a-1943cb5152dd ;
+    property:trackDuration 175242 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:aa330b3c-c8a9-5676-9be1-6cfd21755228 ;
+    property:trackISRC "USSM12002017" ;
+    property:trackName "im used to it" ;
+    property:trackPopularity 47 ;
+    property:trackSpotifyURI "7lfoJaJRuVB43jLr4Ydi00" .
+
+media:1ea68f9a-c4ad-547e-a073-33b6c6fa7df1 a media:Track ;
+    property:trackBelongsToAlbum media:8b9d1f98-c0ff-55cf-b5da-6f1f6cd72bce ;
+    property:trackDuration 256342 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:9c62c6fb-8dc3-55c1-bf21-74d87f63f70c ;
+    property:trackISRC "GBKPL1805608" ;
+    property:trackName "Used to the Darkness" ;
+    property:trackPopularity 58 ;
+    property:trackSpotifyURI "3SemJVQCsUo0K3QGN7pIXu" .
+
+media:222cd407-fb8b-54a5-861d-5cf549e669f4 a media:Track ;
+    property:trackBelongsToAlbum media:29fae028-83ec-5ae8-83fb-831906cda52b ;
+    property:trackDuration 206233 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:d7c164d9-6afd-5812-a5f2-95aca26632f8 ;
+    property:trackISRC "USAT21811073" ;
+    property:trackName "Sorry for Writing All the Songs About You" ;
+    property:trackPopularity 34 ;
+    property:trackSpotifyURI "7CETR23Us2ET1iXIKhF5Ju" .
+
+media:233e3213-10a3-5d2a-bee6-48d303fccf52 a media:Track ;
+    property:trackBelongsToAlbum media:e4d5f4ae-8904-5577-baee-a0345aeacf68 ;
+    property:trackDuration 194000 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:01cb74d2-e212-568d-8653-8b1ac4f9a97c ;
+    property:trackISRC "BRDEP0300183" ;
+    property:trackName "Telegrama - Ao Vivo" ;
+    property:trackPopularity 41 ;
+    property:trackSpotifyURI "4q3FCy1LpkERlvZ6wTscLe" .
+
+media:24155d30-498a-5b9c-87eb-e8ed7673774f a media:Track ;
+    property:trackBelongsToAlbum media:2f57bf4d-e646-5639-94e6-7bad1f49c9ae ;
+    property:trackDuration 167800 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:897308ce-a216-54ac-b038-c15b23afda01 ;
+    property:trackISRC "USPR39982230" ;
+    property:trackName "My Prayer" ;
+    property:trackPopularity 50 ;
+    property:trackSpotifyURI "1ntGJDSakqsaw1KhptKrB5" .
+
+media:25d60421-fdde-5643-ab66-66ffa43ff50b a media:Track ;
+    property:trackBelongsToAlbum media:03c76b06-9e6a-5ecf-9ee5-e9781495dddf ;
+    property:trackDuration 133226 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:40c9e1c5-387c-5a3f-af62-d0b56ff15cc8 ;
+    property:trackISRC "GBUM72101390" ;
+    property:trackName "Haunted House" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "5ZadVMjxNjnrG1EvtRaJ10" .
+
+media:26eacb81-2722-5ee1-b9d6-a77e1870e6d8 a media:Track ;
+    property:trackBelongsToAlbum media:7a57310f-09c0-5c5e-9b39-7480de7a5056 ;
+    property:trackDuration 266066 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:7dac7cb9-1561-56dd-9dec-01737aaa29df,
+        media:be5ac170-f2bc-51ad-b9de-f62b6878f392 ;
+    property:trackISRC "INV119900298" ;
+    property:trackName "Ek Din Aap From Yes Boss" ;
+    property:trackPopularity 46 ;
+    property:trackSpotifyURI "7dbO1k9ryxPFJG0fvYBffu" .
+
+media:29b4e89b-0b0a-591d-afb0-640ff3c6f099 a media:Track ;
+    property:trackBelongsToAlbum media:0464b284-58b6-5e4e-833d-22c2e4a96bf9 ;
+    property:trackDuration 325666 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:20146485-609e-52f2-974e-41fcb572a6ac ;
+    property:trackISRC "TR0180600090" ;
+    property:trackName "Gz Karalm" ;
+    property:trackPopularity 38 ;
+    property:trackSpotifyURI "6TaQbV1VqH1QUsgq6apGB3" .
+
+media:29b548ee-6b42-54f0-90cd-ddb19d24e69c a media:Track ;
+    property:trackBelongsToAlbum media:4a5d729f-fe35-5d65-95e0-0214a4059d67 ;
+    property:trackDuration 232000 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:39a25c77-ea4c-58f0-b1a5-fe3b8ccd0420 ;
+    property:trackISRC "QZAKB2011739" ;
+    property:trackName "Mahola" ;
+    property:trackPopularity 24 ;
+    property:trackSpotifyURI "7KpA2ZOdXXU7ymU05JmAv0" .
+
+media:2b86d639-02f4-5a0b-b2bf-6fab9146f03b a media:Track ;
+    property:trackBelongsToAlbum media:bc3d38da-86dc-5776-ad77-80f9ecf8cdec ;
+    property:trackDuration 340399 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:2345f980-d976-5678-8d09-d2eb11082d12,
+        media:c05a21d3-1c9a-52e7-916b-674112a8e6d4 ;
+    property:trackISRC "INS181401009" ;
+    property:trackName "Galliyan" ;
+    property:trackPopularity 61 ;
+    property:trackSpotifyURI "3ySVdXje5nm31d7vL3jNV3" .
+
+media:2cd02170-e96a-566a-ba1e-8ac98e4766b0 a media:Track ;
+    property:trackBelongsToAlbum media:b593118b-08f8-5252-8930-780b74b023af ;
+    property:trackDuration 320908 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:d10c3d07-d1f4-54e7-b421-30d3ae88ab17 ;
+    property:trackISRC "usx9p1216913" ;
+    property:trackName "Incessant Damaadam" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "15d5KE4LxgkqkwFLeuwzIL" .
+
+media:2efd12ee-a3d8-5832-8bce-5dc0d5a5ad24 a media:Track ;
+    property:trackBelongsToAlbum media:ac0f3d58-6599-5a91-8622-169f41f6e326 ;
+    property:trackDuration 290194 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:f8d440fd-feb2-54a2-ab00-1f029a6203d0 ;
+    property:trackISRC "uscgh1124224" ;
+    property:trackName "O Snehame" ;
+    property:trackPopularity 17 ;
+    property:trackSpotifyURI "4ZOpLB1ztn2OeoMmhMUPkf" .
+
+media:31f8c7a2-16ce-54bb-9b01-ff5fb3feac22 a media:Track ;
+    property:trackBelongsToAlbum media:2ffd3577-7669-58e2-bc0b-00a1774ab4ca ;
+    property:trackDuration 206400 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:1b2e124c-e7bd-5e79-9fe2-32e63248ad55 ;
+    property:trackISRC "USUM71703459" ;
+    property:trackName "Miracle" ;
+    property:trackPopularity 53 ;
+    property:trackSpotifyURI "6A6PDawvZIfnJHW40sBHzz" .
+
+media:38cbad56-82cc-515c-8f01-18ff958b1ffc a media:Track ;
+    property:trackBelongsToAlbum media:b9d25a42-610c-5d7c-aa31-e1ffecfc8b5e ;
+    property:trackDuration 117333 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:dea47370-cbb1-5077-9962-aba28753da91 ;
+    property:trackISRC "SE4RG2169801" ;
+    property:trackName "konichiwa" ;
+    property:trackPopularity 1 ;
+    property:trackSpotifyURI "5tLWpmZIBoa8F4GT3hZMjl" .
+
+media:394e064c-0589-5131-835c-645a45cbcf42 a media:Track ;
+    property:trackBelongsToAlbum media:209ade6f-d836-5c71-aaf5-12f2039ba204 ;
+    property:trackDuration 137872 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:28561df4-027e-56a2-a9ec-26a85e977718,
+        media:ab883a1a-997f-5e5e-80ef-090df6a042c5 ;
+    property:trackISRC "AUBEC1834265" ;
+    property:trackName "94" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "3VlD9L4CDMpVILVDOuTkvw" .
+
+media:39e7d45f-06a2-5a88-99f0-6f03837c6f87 a media:Track ;
+    property:trackBelongsToAlbum media:8570548c-0f4d-5c2b-bb00-afe1d567f56d ;
+    property:trackDuration 173423 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:04ca9d1c-770d-5c84-8aa1-c12c08373852,
+        media:91a91650-4a41-5c3b-9652-39be82f67fef ;
+    property:trackISRC "GBSMU9219991" ;
+    property:trackName "Nin Chundil Pookum Moham" ;
+    property:trackPopularity 10 ;
+    property:trackSpotifyURI "2sNH63LUog7Fnv7eYpmbzS" .
+
+media:3c92f17c-d0bd-5629-a348-499d5ca5b52c a media:Track ;
+    property:trackBelongsToAlbum media:409e91cc-9b83-5c6d-90e0-16bda48b8a7f ;
+    property:trackDuration 175400 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:0a3b3d1c-23d9-5c2e-87d9-d7160cf0fb21,
+        media:8e78c737-aff3-5b2e-97bb-0b829d1dfb34,
+        media:d22654ba-5674-58fe-ad31-dbe900b21a7c,
+        media:f5e3c00f-db58-51d3-99c1-a12d29a1c843 ;
+    property:trackISRC "USSM10413730" ;
+    property:trackName "All I Ask Of You - Reprise" ;
+    property:trackPopularity 24 ;
+    property:trackSpotifyURI "77IBDwZDA8BdAQ4Nb24rwl" .
+
+media:47f8c9de-2653-5986-bed7-a954919182b0 a media:Track ;
+    property:trackBelongsToAlbum media:7c63530c-7b1b-5b7b-a676-366336fd2bcd ;
+    property:trackDuration 289786 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:daa87369-08de-5645-afff-3f600e0df756 ;
+    property:trackISRC "DEAE60300293" ;
+    property:trackName "Wish" ;
+    property:trackPopularity 14 ;
+    property:trackSpotifyURI "3KmlvEQ4drHLcJinD0dnmX" .
+
+media:49247064-ecee-5ffa-834c-836818a7ebe1 a media:Track ;
+    property:trackBelongsToAlbum media:0f27c731-440b-5143-9dbb-9b9dbf0c16f6 ;
+    property:trackDuration 139777 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:c2905212-da8e-50e7-9d32-1ef5d72fb627 ;
+    property:trackISRC "US66W2101605" ;
+    property:trackName "Another Life" ;
+    property:trackPopularity 37 ;
+    property:trackSpotifyURI "44jnGxgCSoyxygFmpyCiPy" .
+
+media:4af59268-4b5e-5639-8fcc-983d8ccff27f a media:Track ;
+    property:trackBelongsToAlbum media:fcf8a141-a0fc-5563-8354-a39f152cb533 ;
+    property:trackDuration 209415 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:10742cd0-4707-51f8-9aa5-cd6fe3fc9227 ;
+    property:trackISRC "QZHNA2124344" ;
+    property:trackName "Attached" ;
+    property:trackPopularity 28 ;
+    property:trackSpotifyURI "3jvqqFqmRnZKZJXnOKV4zp" .
+
+media:4bfa2699-614f-5957-a8a7-19a7f60c0de5 a media:Track ;
+    property:trackBelongsToAlbum media:304776b2-2252-5229-82cd-d2a75b72ac51 ;
+    property:trackDuration 180617 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:28d3fef3-4146-5605-80a4-e5ff0c93bb91 ;
+    property:trackISRC "DEEQ81600133" ;
+    property:trackName "3 Promille Doch da geht noch was" ;
+    property:trackPopularity 13 ;
+    property:trackSpotifyURI "4DeQMfE4mEkEjTZFmcIy85" .
+
+media:4d38623d-ceaf-532a-ae61-250d6ad03f97 a media:Track ;
+    property:trackBelongsToAlbum media:1813eafa-508d-5456-be90-81ccf7c4a194 ;
+    property:trackDuration 295133 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:d0cc876d-53ef-5dbc-bcb0-cc43b3e38219 ;
+    property:trackISRC "BRWMB9900442" ;
+    property:trackName "Rosa Maria" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "0S5ys0PSO3o0GbfF2wTazO" .
+
+media:5c3c54ce-373f-5746-8dd7-1de62ec42a1f a media:Track ;
+    property:trackBelongsToAlbum media:c994214f-0620-54ac-a1bd-917574293bf4 ;
+    property:trackDuration 196160 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:b68c1051-bbd3-59de-8010-392d167e731a ;
+    property:trackISRC "NLS241601403" ;
+    property:trackName "Lachen Is Gezond" ;
+    property:trackPopularity 18 ;
+    property:trackSpotifyURI "79Ds3vQ6WRClv8zdkj2404" .
+
+media:5f9d97ef-318e-57dc-8dfe-306cb93d8e14 a media:Track ;
+    property:trackBelongsToAlbum media:a25ec608-ca06-5f21-81e5-e1d6cbc82919 ;
+    property:trackDuration 282795 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:d24d1cb5-ba19-5694-b48d-1dd3377a16b8 ;
+    property:trackISRC "SEWEE2118101" ;
+    property:trackName "En dag nr du blir stor" ;
+    property:trackPopularity 33 ;
+    property:trackSpotifyURI "1h6NF4OErecHfANsoGV32h" .
+
+media:6398488b-db71-59ed-8e07-33c02b30f096 a media:Track ;
+    property:trackBelongsToAlbum media:53748f22-82e9-5a8a-a0a8-ea33df4a6acc ;
+    property:trackDuration 295240 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:03db30a4-ad89-5afb-9d76-8d17b8c5dfd6,
+        media:4267a37e-2f79-56bb-95c0-e352edfa7e29,
+        media:61ac3430-15e5-5469-adbf-e55ff2dca938,
+        media:80c660d9-5027-503c-b81c-40511ce7fd13,
+        media:81d82ffb-a88f-5ad1-9762-2bd9cfbf4416,
+        media:c74d6a3b-338f-5d7e-9dc6-dbe0c3d2f1c5,
+        media:d4c01b52-57de-53c8-865e-e35c5c24b82d,
+        media:ddb92ca2-97ac-5e45-b5f9-4ca3e357735c,
+        media:e6eb0693-d02a-5d20-933f-428294f8f8ef,
+        media:f03969dc-0fde-5536-abe1-37f29379651b,
+        media:fdef6a51-077c-5c5d-97fb-7b622fdea57f ;
+    property:trackISRC "GBAYC0203281" ;
+    property:trackName "Bizet Carmen WD 31 Act 3 Prends garde  toi Carmen Don Jos Le Dancare Chur Le Remendado Carmen Micala Frasquita Mercds" ;
+    property:trackPopularity 17 ;
+    property:trackSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:64eb431b-13de-5abb-99ba-73ed1ea404bf a media:Track ;
+    property:trackBelongsToAlbum media:d692d025-a51d-59c9-a2a7-9f703823267d ;
+    property:trackDuration 256986 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:52a7be6d-0a0c-5ed9-a603-215aadb494ed ;
+    property:trackISRC "GBN9X1100016" ;
+    property:trackName "A Great Day for Freedom" ;
+    property:trackPopularity 48 ;
+    property:trackSpotifyURI "2dxfyqdrI8XVOT3H1YcOsU" .
+
+media:66d7cfee-b27e-542c-a7d2-da0e66b740ed a media:Track ;
+    property:trackBelongsToAlbum media:e1b065ad-5c0d-5f8a-914f-ee3d38917941 ;
+    property:trackDuration 289767 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:1175e4d4-b818-546a-9811-ddba20a2c577,
+        media:14d3942e-e5b3-53e9-8a9e-0f4c3c994dce,
+        media:28499cbb-1043-5812-8c7e-c6b3558f26fc,
+        media:35e6c75e-9d76-59b3-8f32-1c912cfa0faf,
+        media:644697ae-f802-5ded-813b-09b98200043d,
+        media:6f2189e3-d759-56e4-82fb-16fd0e601ae1,
+        media:e3a0a15e-be42-5f98-8dfb-40129b1173dc ;
+    property:trackISRC "INT202203137" ;
+    property:trackName "Rangarattinam - From Natchathiram Nagargiradhu" ;
+    property:trackPopularity 22 ;
+    property:trackSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:671eaf14-f0ab-57f7-b7ef-be66d8cae185 a media:Track ;
+    property:trackBelongsToAlbum media:bcbc9252-d24b-5815-9248-075e2e556476 ;
+    property:trackDuration 305680 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:c9fe9d25-1b0d-54dd-a04c-62fd0739ac85 ;
+    property:trackISRC "ART0G1209367" ;
+    property:trackName "Oblivion" ;
+    property:trackPopularity 14 ;
+    property:trackSpotifyURI "3TjXPh8bOY0K6K5WnReqH8" .
+
+media:6b926d5e-5efa-592f-b8d2-4baeec25a3d9 a media:Track ;
+    property:trackBelongsToAlbum media:1508c982-599e-5664-ae51-9a88cd456b99 ;
+    property:trackDuration 449200 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:3a4eb608-0922-55ef-81f6-c028a9933e1c ;
+    property:trackISRC "TCAFP2116114" ;
+    property:trackName "Abrazar la Niebla" ;
+    property:trackPopularity 42 ;
+    property:trackSpotifyURI "69zmyMJrufLbIGGC4QO2al" .
+
+media:6ce602c3-11cd-512b-a17c-7f9c852f452d a media:Track ;
+    property:trackBelongsToAlbum media:427383c4-8655-5336-a66c-f954e05f5f3d ;
+    property:trackDuration 275000 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:dcbd2f12-0d89-5c42-a97c-e77ef3e1ab45 ;
+    property:trackISRC "JPU902002290" ;
+    property:trackName "" ;
+    property:trackPopularity 59 ;
+    property:trackSpotifyURI "0cSkn2l67csUljEy0EEBPn" .
+
+media:6d6e1db9-d3e0-5087-8ae4-d573e417dd5a a media:Track ;
+    property:trackBelongsToAlbum media:80a55853-5bd5-58ba-8939-897b75179061 ;
+    property:trackDuration 551360 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:eb695916-2f74-5534-8266-dfc78df9152e ;
+    property:trackISRC "INS189120750" ;
+    property:trackName "Man Leke Aaya Mata Rani Ke Bhawan Mein" ;
+    property:trackPopularity 49 ;
+    property:trackSpotifyURI "5GfhNTwnaC2dUWMKhnLmWX" .
+
+media:6fbc253c-00d8-568a-80c1-3430e605c383 a media:Track ;
+    property:trackBelongsToAlbum media:5d1c5ec1-71d1-5db3-9ec9-e591ebfe469c ;
+    property:trackDuration 149302 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:7f054ee3-7780-523b-9665-110f9e383bfb ;
+    property:trackISRC "US85P1523608" ;
+    property:trackName "Life Insurance" ;
+    property:trackPopularity 18 ;
+    property:trackSpotifyURI "0aGP7lKPk7LO0czSXg6xUY" .
+
+media:7168413b-267f-5562-aabc-4037746d8c1f a media:Track ;
+    property:trackBelongsToAlbum media:a1eb8048-c154-5071-851e-674b21c66c38 ;
+    property:trackDuration 161560 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:22785226-8b31-5617-a5ec-5a448dfb1cfa ;
+    property:trackISRC "USRZO1231428" ;
+    property:trackName "Ding Dong The Witch Is Dead" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "5mkjplHZNNa8ebq0ZEucBh" .
+
+media:7244c91b-f6ac-517b-8751-ccf6e3b28fe9 a media:Track ;
+    property:trackBelongsToAlbum media:0159233d-0015-56f8-8aa3-dbbf972bb2ed ;
+    property:trackDuration 207141 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:72a5c7bd-c883-52f4-9de3-928522ccdada ;
+    property:trackISRC "GBARL2101316" ;
+    property:trackName "DiE4u" ;
+    property:trackPopularity 56 ;
+    property:trackSpotifyURI "2gT72HL4Y84K2Mle3miAMJ" .
+
+media:724e7868-8478-58e9-8b89-46c067fbdb3b a media:Track ;
+    property:trackBelongsToAlbum media:f57b0221-ec98-58a8-bd09-b40332f7c2bc ;
+    property:trackDuration 123000 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:680850fb-7c15-5da8-b640-e48850399fa5,
+        media:b14756f0-a6da-5c50-bf67-6f06f32a982d ;
+    property:trackISRC "QZCE61808038" ;
+    property:trackName "Everybody Needs a Hug" ;
+    property:trackPopularity 6 ;
+    property:trackSpotifyURI "2MTwDvHo3Mc8lKp7FeEHJJ" .
+
+media:775d9ad2-cff0-568c-a68e-aa0a5d1a432b a media:Track ;
+    property:trackBelongsToAlbum media:d47aa335-318d-518b-ace6-e45925ed6d42 ;
+    property:trackDuration 227011 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:5c2e0837-0113-5063-9eb5-69a0f8e0db43,
+        media:a66c90fc-cc45-5bf6-aa2f-329439b42823 ;
+    property:trackISRC "JPWP01970418" ;
+    property:trackName "MAYDAY feat Ryo from Crystal Lake" ;
+    property:trackPopularity 54 ;
+    property:trackSpotifyURI "2wJJNgD6GrKoQ435VxTRv6" .
+
+media:7b229f68-5d35-5cad-ac78-97b03c09237d a media:Track ;
+    property:trackBelongsToAlbum media:56a5baaa-359d-5fa5-9d7c-1b76f5d33056 ;
+    property:trackDuration 348386 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:3676862a-ff5d-5527-a204-07d4bdd13fc4 ;
+    property:trackISRC "GBHQD0500017" ;
+    property:trackName "Tears Dont Fall" ;
+    property:trackPopularity 49 ;
+    property:trackSpotifyURI "3iWlbqAaoIR7H7gyO3a6rV" .
+
+media:7c12d82b-f626-5905-bf1f-e28c42db7d06 a media:Track ;
+    property:trackBelongsToAlbum media:477740b2-87cd-5cc1-b0b6-a8efab414d70 ;
+    property:trackDuration 262800 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:51f3d382-054e-52c9-8276-ce17a41b578f ;
+    property:trackISRC "BREMI9500396" ;
+    property:trackName "Cohab City / Msica Incidental ABC / Vem Pra C" ;
+    property:trackPopularity 33 ;
+    property:trackSpotifyURI "4eBBprodHvNoxSVvSjfrcg" .
+
+media:7ea2fede-f704-5414-934b-aa367adcac4f a media:Track ;
+    property:trackBelongsToAlbum media:1ef34c65-be65-550d-a5dc-a9dc59838d8c ;
+    property:trackDuration 210791 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:51f4b907-2419-5196-9ab6-56e4e48bef2a ;
+    property:trackISRC "SEXCH0110908" ;
+    property:trackName "Hade Velat Vara Med Tillgnad Rock-Olga" ;
+    property:trackPopularity 15 ;
+    property:trackSpotifyURI "7dAy3lwzP9aAP5NujoVa83" .
+
+media:8577d5ed-f874-5d06-a597-dd3898fdf11f a media:Track ;
+    property:trackBelongsToAlbum media:783ea85f-edf1-5e60-a2eb-9f511c5ff5cc ;
+    property:trackDuration 190080 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:e6e51b5d-bf13-53dd-bdf1-5b4d3e0996ff ;
+    property:trackISRC "FR6V82501680" ;
+    property:trackName "Vinovata li ja" ;
+    property:trackPopularity 12 ;
+    property:trackSpotifyURI "0YKcxflIvNtQd2Chh5EWrg" .
+
+media:8888ef38-ffcd-58d2-afda-a0af85f4cbaa a media:Track ;
+    property:trackBelongsToAlbum media:9e455b63-0e40-55e4-abb3-5033229cdb84 ;
+    property:trackDuration 194544 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:288f5dbf-48ea-5d8d-b9ea-8cf51609c1ef,
+        media:6cd82020-ae1c-5493-bb6a-5d58454b2b59 ;
+    property:trackISRC "USWB12102294" ;
+    property:trackName "Wishful Drinking" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "6KBEi0APTBDw4xY0pHdFxl" .
+
+media:8b4280b1-caa9-5a52-b8de-13ff541a0dca a media:Track ;
+    property:trackBelongsToAlbum media:4eaa6117-ea8d-52e3-8378-09e78d6bb5d5 ;
+    property:trackDuration 225877 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:0c5f4daf-ae98-5d82-984b-fae9f5172b5d,
+        media:bd021c5f-d395-5947-a32e-3db9ea8692cc ;
+    property:trackISRC "BX1TU2000024" ;
+    property:trackName "Somos Instantes" ;
+    property:trackPopularity 4 ;
+    property:trackSpotifyURI "010LzZsO4eqQUdUv1f1y9m" .
+
+media:8c2a58b0-42b2-5aa1-bac3-53d68c8ce51c a media:Track ;
+    property:trackBelongsToAlbum media:b47b0467-788e-5462-a310-ba7a89849aff ;
+    property:trackDuration 57480 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:b527f4ba-f0f5-5763-8ccf-56d2362fd04f,
+        media:e41e60ee-f491-5f57-96c7-79bb396db5e1 ;
+    property:trackISRC "NLA507602312" ;
+    property:trackName "Minuet in F K2" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "5YrGHFnhNZou6fvM7VBQKi" .
+
+media:8c489607-bc7e-5056-b5a4-ed6c92057fc3 a media:Track ;
+    property:trackBelongsToAlbum media:c957f544-0f84-5768-89b5-f1c324163732 ;
+    property:trackDuration 276306 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:32aadbf8-462c-533d-9179-de46d321adca ;
+    property:trackISRC "USDJJ0809186" ;
+    property:trackName "   Assignment and Pray" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "6pcKE146x55SPk6g3Cnhq1" .
+
+media:8e993bf1-2ef8-5fa9-8a5e-724d53ea3363 a media:Track ;
+    property:trackBelongsToAlbum media:36bf4ce3-e107-55b7-aef3-0290f7a27842 ;
+    property:trackDuration 306133 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:73b6a5a0-e35f-5ce0-a52c-f0933923f83e,
+        media:884a5aba-911c-5c0b-bbd6-9912ed01f8e6 ;
+    property:trackISRC "INS180131113" ;
+    property:trackName "Woh Ladki Hai Kahan" ;
+    property:trackPopularity 61 ;
+    property:trackSpotifyURI "2tO0QPdCA0jgDBshTuYYkc" .
+
+media:8ef2a9e1-e2b1-518a-98f9-4ff81b9a9933 a media:Track ;
+    property:trackBelongsToAlbum media:87cd857b-2619-5dd1-a1ed-39c66d43871b ;
+    property:trackDuration 188893 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:7bf91053-36ae-5350-b3fd-1b69e33c49b7 ;
+    property:trackISRC "uscgj0836002" ;
+    property:trackName "Little Black Train Of Death" ;
+    property:trackPopularity 20 ;
+    property:trackSpotifyURI "6DfBZGpdwKxoPdUDqL1NPP" .
+
+media:8f3df8f1-cf82-5edf-8b6c-537c0d3bb1f5 a media:Track ;
+    property:trackBelongsToAlbum media:28c53613-c3c1-5f5b-8a7b-4d238d2b6fac ;
+    property:trackDuration 259239 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:6d3e41dd-f563-5f61-a601-e3dd2a1320e3,
+        media:d4dc32c4-e245-5fd2-963d-1558da73c29e ;
+    property:trackISRC "INM201101682" ;
+    property:trackName "Aaranne Aaranne" ;
+    property:trackPopularity 39 ;
+    property:trackSpotifyURI "4lrKVSLsKc7R8ggs1SX08n" .
+
+media:90776735-7a35-5c2f-9661-4f6d5c17d142 a media:Track ;
+    property:trackBelongsToAlbum media:c7976aff-0f1f-57c8-b455-0d9919657df0 ;
+    property:trackDuration 190253 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:634e438f-f9a3-56a1-b78f-729b574215f3 ;
+    property:trackISRC "USUM72001733" ;
+    property:trackName "Rosa" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "1YQk5vR4YduJFoSzr0kvKT" .
+
+media:92b9d58c-2de1-5642-91b2-1bc7011e5a34 a media:Track ;
+    property:trackBelongsToAlbum media:021f6d1d-24d1-5bb4-b995-125f25572d63 ;
+    property:trackDuration 219840 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:cd4cda15-d7d7-551a-a6d5-2a0586afb356 ;
+    property:trackISRC "SELAA7400110" ;
+    property:trackName "Hanna frn Arlv" ;
+    property:trackPopularity 35 ;
+    property:trackSpotifyURI "0q7u1QUZmKDTTa4WekSLST" .
+
+media:968eff0e-8613-5870-b992-7b969389952b a media:Track ;
+    property:trackBelongsToAlbum media:f6d15379-7050-5f6c-a60d-9a6acfd44db6 ;
+    property:trackDuration 134226 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:94dfd9ea-9765-55af-b627-76304c40c2f9 ;
+    property:trackISRC "TCADK1726480" ;
+    property:trackName "Torba Var M Beyler" ;
+    property:trackPopularity 26 ;
+    property:trackSpotifyURI "7LxeS6YSxwhKkEevTfBEFm" .
+
+media:9789b595-0a43-5046-a66b-c691839ba1d4 a media:Track ;
+    property:trackBelongsToAlbum media:3c833c31-1b4d-552e-98af-ec4c069adecc ;
+    property:trackDuration 234486 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:00e763d2-53b7-52fc-84ec-588af99bfa8a,
+        media:93aa3fca-299f-5d8c-b367-32d1a71e9bb5 ;
+    property:trackISRC "GBBPW1400157" ;
+    property:trackName "Never Catch Me" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "6CTG85NJI1Wm60pxTSRNwL" .
+
+media:9842e620-5750-5715-b953-09b8ef9f0260 a media:Track ;
+    property:trackBelongsToAlbum media:be006bc4-ba20-5608-9288-21f56ea73726 ;
+    property:trackDuration 262400 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:067424a4-3f5d-5fdc-a7ce-5b16c30e60ae,
+        media:20e679fd-46ce-5e37-840e-7e84be77042d,
+        media:efe88adb-35f4-52cc-a60b-c8b9f77cb29d ;
+    property:trackISRC "CA5KR0034540" ;
+    property:trackName "Sunrise - 2021 Edit" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "5SoyQfSOYcegt3mXLdlqSl" .
+
+media:a1a9b62c-a3bf-5307-9988-1b94561a0a1e a media:Track ;
+    property:trackBelongsToAlbum media:bcb568ad-7b1d-5ae9-b9e2-f57a326b9cf6 ;
+    property:trackDuration 214575 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:e10c003e-9c7e-5562-b275-535f88894627 ;
+    property:trackISRC "GBAYE7600329" ;
+    property:trackName "Devil Woman" ;
+    property:trackPopularity 50 ;
+    property:trackSpotifyURI "2oRn0QuaWQ1hragGQ7XZ9s" .
+
+media:a88952c0-82e6-5bbf-ae97-a20329a26997 a media:Track ;
+    property:trackBelongsToAlbum media:95b684b6-83a5-5a07-afb0-3815fe43e897 ;
+    property:trackDuration 248073 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:035162b1-d276-5d04-b444-63465242c41a ;
+    property:trackISRC "JPTF02003504" ;
+    property:trackName "" ;
+    property:trackPopularity 14 ;
+    property:trackSpotifyURI "5gfv8DHqBG3s4jvrwZu6sp" .
+
+media:ac0d77d0-a725-5f57-8c21-63a81bea863c a media:Track ;
+    property:trackBelongsToAlbum media:af7d1441-a4d9-559a-bf1b-d334834f9a88 ;
+    property:trackDuration 357551 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:2ac0414a-5dd0-5c12-b2c4-59df23305243,
+        media:32ec1c26-b073-5bfe-9bb0-8672007ac5da,
+        media:4cb494b6-f446-53a0-b5f8-6f5ffd0648d8,
+        media:4de2fd7a-440e-5ca7-b909-66f63602a04c,
+        media:5306ab66-9079-5ee1-9bd5-9726426e4cd3,
+        media:56500e78-4830-5a58-9108-f764c9d26857,
+        media:68fe9e6c-9376-5534-a7ff-4e3d489b03c2,
+        media:7fcfc099-d74f-583e-b468-f351169edb97,
+        media:8bc4e902-ccd6-56d1-a9ee-90b11221a267,
+        media:c7a84540-b711-539c-a8ab-d98f1de30c83,
+        media:c7fbb1ff-7984-5c82-b6f6-9fe929b47775,
+        media:c8663772-db3b-5d7d-b625-a583e14c9e6a,
+        media:c96bd66c-b86e-53f4-b9c9-dc762708b2b2,
+        media:da209003-fa15-5878-9b4d-5e394f706437,
+        media:ea09bc84-aae3-5f73-a7b1-abd2f092c661 ;
+    property:trackISRC "MYUM81807116" ;
+    property:trackName "Vai-Lapalam - All Star Freemix" ;
+    property:trackPopularity 21 ;
+    property:trackSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:ae9da8f4-6af6-51df-ba20-346e44b53952 a media:Track ;
+    property:trackBelongsToAlbum media:18a7aab0-c18b-565a-902e-894be508b664 ;
+    property:trackDuration 242216 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:489eb309-a50d-553e-8259-335e98dd6a5e ;
+    property:trackISRC "CLAC28400003" ;
+    property:trackName "Latinoamrica Es un Pueblo al Sur de Estados Unidos" ;
+    property:trackPopularity 39 ;
+    property:trackSpotifyURI "6Y57xXG66eowb6BqZfbd0U" .
+
+media:b0160c74-09a7-5beb-a278-0677047093db a media:Track ;
+    property:trackBelongsToAlbum media:72f1b7de-49ab-5220-812b-f8dab49069bd ;
+    property:trackDuration 196906 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:5d23bc89-d913-550c-a015-8dc812f2452b,
+        media:d1325023-b79e-5fff-94fa-6c75c4605782 ;
+    property:trackISRC "USSM12003402" ;
+    property:trackName "Wild feat Gary Clark Jr" ;
+    property:trackPopularity 54 ;
+    property:trackSpotifyURI "4rVW6XqAsSaf5vOwc8FREW" .
+
+media:b0f6023c-96e5-5d20-97d6-91f772911a87 a media:Track ;
+    property:trackBelongsToAlbum media:fb551759-a6ad-525f-acbd-3a428ece35e1 ;
+    property:trackDuration 143800 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:465ade4d-39ed-578c-a678-4bc46980b945,
+        media:54ae80e4-457e-5796-9e37-e1c2d7e8a84c ;
+    property:trackISRC "DEE861903013" ;
+    property:trackName "Feigling" ;
+    property:trackPopularity 26 ;
+    property:trackSpotifyURI "6wlUttkKh85t9MLZokg29e" .
+
+media:b67d83bf-9df3-5217-b0c8-a4f89446a354 a media:Track ;
+    property:trackBelongsToAlbum media:57b064f4-266c-5a8e-b9a2-b213ae8b426c ;
+    property:trackDuration 133133 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:897308ce-a216-54ac-b038-c15b23afda01 ;
+    property:trackISRC "USPR36301972" ;
+    property:trackName "Winter Wonderland" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "7jkfwumh6cQYFsIsqPJ7ps" .
+
+media:b862be12-c803-533c-a426-ebe8a620e081 a media:Track ;
+    property:trackBelongsToAlbum media:a84ae5c9-b7d9-5115-b9df-bd5d9aed7c60 ;
+    property:trackDuration 174128 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:0730e097-897d-5929-ab9d-6e9d095c25fb ;
+    property:trackISRC "HKJ341550019" ;
+    property:trackName " -   " ;
+    property:trackPopularity 15 ;
+    property:trackSpotifyURI "38H8fIZL3gPwmB9R2dURYh" .
+
+media:bc7c0dd3-ce65-5dc5-bd9a-7c4614723622 a media:Track ;
+    property:trackBelongsToAlbum media:b36c186e-3368-5c3c-bedd-6e6d9ebb7495 ;
+    property:trackDuration 131666 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:7a2b3bbb-3e1d-549e-990a-f0fa33e1b068 ;
+    property:trackISRC "JPPO01618952" ;
+    property:trackName "Dream lantern" ;
+    property:trackPopularity 62 ;
+    property:trackSpotifyURI "5mEqD00bdFcsiVd0MfvEeF" .
+
+media:c6085baa-cf7a-5b75-9340-2ebd53a59325 a media:Track ;
+    property:trackBelongsToAlbum media:c75e72cb-45b3-5119-ad69-020c4d556a31 ;
+    property:trackDuration 259133 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:7beae274-084b-563e-ba6a-11a68d58098c ;
+    property:trackISRC "USUR10300058" ;
+    property:trackName "Straight Out Of Line" ;
+    property:trackPopularity 51 ;
+    property:trackSpotifyURI "0bKZa2zldftYPRrSRscmG2" .
+
+media:c6f3ba19-c0c8-53ad-9637-8281e78ee40d a media:Track ;
+    property:trackBelongsToAlbum media:81479063-2ef5-57fc-a4a2-0a8fe2e49373 ;
+    property:trackDuration 259497 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:23b2e102-021c-53f4-a90c-840727fc5dd4 ;
+    property:trackISRC "BRUM72200250" ;
+    property:trackName "A Ferro E Fogo / Abandonada - Ao Vivo" ;
+    property:trackPopularity 35 ;
+    property:trackSpotifyURI "0qKucyXpu3wqyu57WSuPfZ" .
+
+media:c7ab67b7-f0b1-5d8f-8de0-2f2b4cb1b973 a media:Track ;
+    property:trackBelongsToAlbum media:f90d1a03-4cc5-57c4-96a8-f4f5bb9ba21f ;
+    property:trackDuration 350853 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:58be2b82-d25c-5060-8032-a3ce120419ca ;
+    property:trackISRC "BRCMP0300378" ;
+    property:trackName "Perfeito  Quem Te Criou" ;
+    property:trackPopularity 45 ;
+    property:trackSpotifyURI "5Z5QyXraBxMH5c1q5eQKfD" .
+
+media:c858e8f6-3a57-5791-b0cf-fde761493bb3 a media:Track ;
+    property:trackBelongsToAlbum media:e7dcea84-7367-56a3-85ce-155154d4cd34 ;
+    property:trackDuration 240048 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:1f0e7690-c4e5-590f-a0bb-b0495e93079e ;
+    property:trackISRC "QZTLA2253698" ;
+    property:trackName "Dominant" ;
+    property:trackPopularity 16 ;
+    property:trackSpotifyURI "5Gzm3nV4Jg9w1PQPMAiZSi" .
+
+media:cd0129a3-3884-549f-9e09-815d67590c05 a media:Track ;
+    property:trackBelongsToAlbum media:d8f9abae-70bb-52a8-ad70-361d2c7f52ba ;
+    property:trackDuration 149160 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:5e46365b-d4bc-597e-9580-2c9390ddc6ee ;
+    property:trackISRC "USACU0504772" ;
+    property:trackName "Rhythm Of The Rain" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "0apq2ENNMlYg9Os1osfJ3Y" .
+
+media:cd1e0e7e-3fae-5863-8ce3-5de0b524b30f a media:Track ;
+    property:trackBelongsToAlbum media:be140602-df03-535d-b8fc-bb25a6f55527 ;
+    property:trackDuration 621320 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:5bccaedd-df31-5633-8346-79dbf27cd589 ;
+    property:trackISRC "NLA320581223" ;
+    property:trackName "The Grand Conjuration" ;
+    property:trackPopularity 42 ;
+    property:trackSpotifyURI "5uFU647R2yVxTSvjKk3iSz" .
+
+media:cdd9bd01-f44f-5a3b-b701-999f004fe1e2 a media:Track ;
+    property:trackBelongsToAlbum media:6f413e6a-7bda-5585-91c5-1194c663cbe0 ;
+    property:trackDuration 199950 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:4d253a65-fa02-59cd-80e1-7e2792ef88ec ;
+    property:trackISRC "USDPK1309010" ;
+    property:trackName "One For the Money" ;
+    property:trackPopularity 1 ;
+    property:trackSpotifyURI "77tR4iQgyQTAnhhuPik3ZP" .
+
+media:ce351419-7ebc-5f8b-bbe3-c18c40c0cf64 a media:Track ;
+    property:trackBelongsToAlbum media:9bf4fde0-ff06-5375-bd14-60cd0316efe9 ;
+    property:trackDuration 153328 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:1b532f6c-58b4-5d30-8abc-53f18d4d9883 ;
+    property:trackISRC "QZHN61901461" ;
+    property:trackName "Around the World La la La" ;
+    property:trackPopularity 53 ;
+    property:trackSpotifyURI "1WF4RTvSeDTOQBD9epYwEi" .
+
+media:d0e3701e-0fcd-5005-8132-7c707606830a a media:Track ;
+    property:trackBelongsToAlbum media:a169c1f8-d79d-5998-bbc1-b67c35b1e077 ;
+    property:trackDuration 242626 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:16ff3929-7fdb-55d9-b697-665d393babad ;
+    property:trackISRC "USSP31100084" ;
+    property:trackName "We Are The Free - Live" ;
+    property:trackPopularity 36 ;
+    property:trackSpotifyURI "0IAHW8BtLVBN2PVPiWo7zE" .
+
+media:d1905e60-9f4d-5756-af81-af25420fe437 a media:Track ;
+    property:trackBelongsToAlbum media:f30bdbee-721c-5336-9622-eac1625e6667 ;
+    property:trackDuration 271720 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:305ef26f-1315-578b-ba01-d26d418a1e1a ;
+    property:trackISRC "USUM71018815" ;
+    property:trackName "Estoy Enamorado" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "3Eo7rOfvXRzGq68b9PVfZE" .
+
+media:d2f31361-d1c0-593d-bf42-f7ae0a24a32c a media:Track ;
+    property:trackBelongsToAlbum media:17f52a3d-7482-5176-a847-2d39e52532a4 ;
+    property:trackDuration 191392 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:0e73ea87-61ae-57a1-8bb1-41c7d6e93a8a,
+        media:94c59df3-3a42-5ab7-8e76-75eb3c7bc913 ;
+    property:trackISRC "QZHZ41945280" ;
+    property:trackName "Paz Interior" ;
+    property:trackPopularity 36 ;
+    property:trackSpotifyURI "1RZ7TBM8Q77L44fC1f97qU" .
+
+media:d43b0094-ea89-578a-9a2d-55a54d398775 a media:Track ;
+    property:trackBelongsToAlbum media:192ff1fe-e2d7-5ecb-9fb1-512530ee5253 ;
+    property:trackDuration 150560 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:27588047-03e1-5e07-bad3-1bfd8234f38c,
+        media:8eef32f8-0dd5-54f4-af82-c97f49b837ef,
+        media:bb67ccee-575b-511a-bb3a-2587a0e505a1 ;
+    property:trackISRC "GBAHS2200496" ;
+    property:trackName "I Just Called" ;
+    property:trackPopularity 52 ;
+    property:trackSpotifyURI "0H8Tclo4x4kbZruQtZFNSX" .
+
+media:d5617754-b9aa-5909-8ec4-f8d19c509fea a media:Track ;
+    property:trackBelongsToAlbum media:6c01544b-b0f1-5e20-8a6a-23fb6824622a ;
+    property:trackDuration 285456 ;
+    property:trackExplicit true ;
+    property:trackHasArtist media:e288d8ff-35fe-5eaa-bdf7-175a6cfdf0db ;
+    property:trackISRC "NLH2L1800257" ;
+    property:trackName "The Last Formation Hard Bass 2019 Anthem - Edit" ;
+    property:trackPopularity 4 ;
+    property:trackSpotifyURI "51xMNT1LnMCfAte5L4lKew" .
+
+media:dc526a46-eb8d-5cfa-8825-95bdc618e981 a media:Track ;
+    property:trackBelongsToAlbum media:c1ac0831-15de-5f43-a6fd-43e04bacadd8 ;
+    property:trackDuration 147026 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:eafdcde6-eef3-5510-851b-0c376f726d9c ;
+    property:trackISRC "NOMRA5801040" ;
+    property:trackName "For a Minute or Two" ;
+    property:trackPopularity 20 ;
+    property:trackSpotifyURI "5bpRBSk8PWLSDORhAUkEv5" .
+
+media:df1e089a-dfe3-52c2-8b1f-6191e04129d9 a media:Track ;
+    property:trackBelongsToAlbum media:152959f8-8db2-5f50-8af2-108b5b7728bd ;
+    property:trackDuration 93146 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:b2f30b01-fb83-57b5-bfac-300dfd2ce24c ;
+    property:trackISRC "USWD10629610" ;
+    property:trackName "Les Poissons - French version" ;
+    property:trackPopularity 25 ;
+    property:trackSpotifyURI "2mq1MbB5TtbMYwuyis5ZOA" .
+
+media:e0c930b0-6450-5d64-849e-c56b5888e59f a media:Track ;
+    property:trackBelongsToAlbum media:cab260da-c481-5e33-a0b3-7b1a2be824fb ;
+    property:trackDuration 284906 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:87b17442-bb66-5387-a199-18742b1db1a5 ;
+    property:trackISRC "USSD19404006" ;
+    property:trackName "Me Estoy Enloqueciendo por Ti" ;
+    property:trackPopularity 19 ;
+    property:trackSpotifyURI "1EQjhHKwMO2zL4cFrlNQ9I" .
+
+media:e28f8cae-ddf3-5561-90a5-9a7d31c97ecc a media:Track ;
+    property:trackBelongsToAlbum media:33a3b8c4-6717-5f3a-8495-672e3145cd7c ;
+    property:trackDuration 120352 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:926f70ed-ce45-5515-ac34-2d5486ca0a05 ;
+    property:trackISRC "TCABP1379129" ;
+    property:trackName "Nord Marathon" ;
+    property:trackPopularity 26 ;
+    property:trackSpotifyURI "1rv3RSx1Dky10W7G94otkw" .
+
+media:e8c12da1-698f-5169-adcc-d880b09e4786 a media:Track ;
+    property:trackBelongsToAlbum media:0dfa1a24-e043-5149-8b88-d337089d5c82 ;
+    property:trackDuration 224480 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:5744ea24-c5a1-5bd7-8894-0c5f494c00f4,
+        media:c7f37dc4-592d-5dfe-b3c0-0e551e73fa55 ;
+    property:trackISRC "GBBKN9900257" ;
+    property:trackName "Afrika Shox - Radio Edit" ;
+    property:trackPopularity 13 ;
+    property:trackSpotifyURI "1aye3Vcu2PEKSIGjcfqkrF" .
+
+media:e8f929cb-891a-51c9-8069-23ea5d90879e a media:Track ;
+    property:trackBelongsToAlbum media:55bd9fd8-3d5d-55c9-8d85-e844ea62d18f ;
+    property:trackDuration 278453 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:0aca80bf-74ec-5ec0-91b1-15254f339a57,
+        media:1a74f1ba-e703-5b63-9142-51bb1b9329d5,
+        media:4a7ce582-bcb9-5242-90f9-407bcd16bf91,
+        media:8e5467bc-457a-51ce-8fb0-ed6065a5640c,
+        media:c75fce4c-e738-597f-97c2-bc2434529893,
+        media:f078b8d7-463d-5c7e-ba09-d74f21c79bd6 ;
+    property:trackISRC "TR0441311701" ;
+    property:trackName "Sekiz 2" ;
+    property:trackPopularity 42 ;
+    property:trackSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:f15e680f-5a25-56a6-9002-3b80d97e7ded a media:Track ;
+    property:trackBelongsToAlbum media:7aa3c2c3-74a4-5f4a-8e9f-d5e95c4c004e ;
+    property:trackDuration 253333 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:c3e6101e-c11f-55c4-a185-80dfa9541814,
+        media:d21c0ab8-3902-5928-a44b-b83d9b6c12e6 ;
+    property:trackISRC "USSM16800982" ;
+    property:trackName "Piece of My Heart" ;
+    property:trackPopularity 22 ;
+    property:trackSpotifyURI "4KVMPQ5ei2LKBaeMmcOBBA" .
+
+media:f1cbdd9e-1aeb-5cfa-a329-6dd6f41a0a9c a media:Track ;
+    property:trackBelongsToAlbum media:7fdf60df-b36c-54d9-a8e8-6e8c901781a3 ;
+    property:trackDuration 380040 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:3b170810-3547-569d-aa5c-10aee760697e ;
+    property:trackISRC "GBHCD1500465" ;
+    property:trackName "Snyper - Original" ;
+    property:trackPopularity 9 ;
+    property:trackSpotifyURI "14PS1WSKEDcU0CeioZpGvy" .
+
+media:f2d8f8f9-f343-5b3f-9b67-450bc14883a1 a media:Track ;
+    property:trackBelongsToAlbum media:7d265cb5-073d-5886-91f2-8ae088095ab6 ;
+    property:trackDuration 153039 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:454574ee-2a60-513d-ae62-0a50fe510fce ;
+    property:trackISRC "ARF470400027" ;
+    property:trackName "Once" ;
+    property:trackPopularity 32 ;
+    property:trackSpotifyURI "5gUXLgX9nLGb1AEZTSKOQm" .
+
+media:f2ef7dad-ccdf-5f16-a831-e2c66afd8004 a media:Track ;
+    property:trackBelongsToAlbum media:52e4c533-2e03-5409-a498-325984c04fa4 ;
+    property:trackDuration 229093 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:2b966f8e-1fa9-592c-9220-a4033717a8eb,
+        media:32bcd6c3-f6a5-555f-9652-b6845b0e6599,
+        media:396550c1-e513-584a-8282-1c62bed956a3,
+        media:53fae4a7-6605-5d43-975b-0d542b53032d,
+        media:73b30176-5123-5ceb-9733-bc9f50a45f98,
+        media:74f85b9f-bb47-5827-af23-9433657f4192,
+        media:868e875b-12f7-53bc-9634-be41c884cf03 ;
+    property:trackISRC "FR96X2094545" ;
+    property:trackName "Unto the Burning Circle" ;
+    property:trackPopularity 24 ;
+    property:trackSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:f32f3b46-e2ad-57ea-a1ac-05c06c230869 a media:Track ;
+    property:trackBelongsToAlbum media:6255fa7d-d795-557a-94c0-661a9b8529da ;
+    property:trackDuration 218506 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:0f8d5b28-fcc8-5b3a-88e9-49312cfe6bfb ;
+    property:trackISRC "HKH580200132" ;
+    property:trackName "" ;
+    property:trackPopularity 21 ;
+    property:trackSpotifyURI "5boCwYWY3cUg1Hhs25qspj" .
+
+media:f5260815-a065-51d4-8e88-10bf36653bad a media:Track ;
+    property:trackBelongsToAlbum media:62ffe741-ecac-59a5-82d4-da973464ff21 ;
+    property:trackDuration 138400 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:793de3d9-00e0-5b78-ac92-c7dc6f5553ad ;
+    property:trackISRC "USCA20200908" ;
+    property:trackName "Rudolph The Red-Nosed Reindeer - Remastered 2002" ;
+    property:trackPopularity 0 ;
+    property:trackSpotifyURI "3vgcVnO40B63dtKBJ54RLJ" .
+
+media:f8fe9b87-1c7d-5f24-bcd1-8f5891a57f28 a media:Track ;
+    property:trackBelongsToAlbum media:82bd8297-73e3-5057-a1b5-978772a1ff95 ;
+    property:trackDuration 288345 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:56909c52-ce62-57ce-8d26-abe50c9803fe ;
+    property:trackISRC "BRUF10800001" ;
+    property:trackName "Casa" ;
+    property:trackPopularity 37 ;
+    property:trackSpotifyURI "0JPeg9MFek6EFFQn9aoSRC" .
+
+media:fbadd1f3-db0c-5f96-b9e6-82d9284bd3e4 a media:Track ;
+    property:trackBelongsToAlbum media:c27768f1-e70e-57ab-9e97-0a63367a132c ;
+    property:trackDuration 166416 ;
+    property:trackExplicit false ;
+    property:trackHasArtist media:a0b1bc9a-216b-5f81-ac5c-e8d2500eebe0 ;
+    property:trackISRC "QZHN62090908" ;
+    property:trackName "New York to LA" ;
+    property:trackPopularity 16 ;
+    property:trackSpotifyURI "5eq83Qv4nFwht3tL3UCKdK" .
+
+property:albumName a rdf:Property ;
+    rdfs:domain media:Album ;
+    rdfs:range rdfs:Literal .
+
+property:albumReleaseDate a rdf:Property ;
+    rdfs:domain media:Album ;
+    rdfs:range rdfs:Literal .
+
+property:albumSpotifyURI a rdf:Property ;
+    rdfs:domain media:Album ;
+    rdfs:range rdfs:Literal .
+
+property:albumTotalTracks a rdf:Property ;
+    rdfs:domain media:Album ;
+    rdfs:range rdfs:Literal .
+
+property:albumType a rdf:Property ;
+    rdfs:domain media:Album ;
+    rdfs:range rdfs:Literal .
+
+property:artistName a rdf:Property ;
+    rdfs:domain media:Artist ;
+    rdfs:range rdfs:Literal .
+
+property:artistSpotifyURI a rdf:Property ;
+    rdfs:domain media:Artist ;
+    rdfs:range rdfs:Literal .
+
+property:base64Value a rdf:Property ;
+    rdfs:domain media:Image ;
+    rdfs:range rdfs:Literal .
+
+property:containsObject a rdf:Property ;
+    rdfs:domain media:Image ;
+    rdfs:range rdfs:Literal .
+
+property:trackDuration a rdf:Property ;
+    rdfs:domain media:Track ;
+    rdfs:range rdfs:Literal .
+
+property:trackExplicit a rdf:Property ;
+    rdfs:domain media:Track ;
+    rdfs:range rdfs:Literal .
+
+property:trackISRC a rdf:Property ;
+    rdfs:domain media:Track ;
+    rdfs:range rdfs:Literal .
+
+property:trackName a rdf:Property ;
+    rdfs:domain media:Track ;
+    rdfs:range rdfs:Literal .
+
+property:trackPopularity a rdf:Property ;
+    rdfs:domain media:Track ;
+    rdfs:range rdfs:Literal .
+
+property:trackSpotifyURI a rdf:Property ;
+    rdfs:domain media:Track ;
+    rdfs:range rdfs:Literal .
+
+media:00e763d2-53b7-52fc-84ec-588af99bfa8a a media:Artist ;
+    property:artistName "Kendrick Lamar" ;
+    property:artistSpotifyURI "6CTG85NJI1Wm60pxTSRNwL" .
+
+media:0159233d-0015-56f8-8aa3-dbbf972bb2ed a media:Album ;
+    property:albumName "DiE4u" ;
+    property:albumReleaseDate "2021-09-16" ;
+    property:albumSpotifyURI "2gT72HL4Y84K2Mle3miAMJ" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:01cb74d2-e212-568d-8653-8b1ac4f9a97c a media:Artist ;
+    property:artistName "Art Popular" ;
+    property:artistSpotifyURI "4q3FCy1LpkERlvZ6wTscLe" .
+
+media:021f6d1d-24d1-5bb4-b995-125f25572d63 a media:Album ;
+    property:albumName "Livet r en fest" ;
+    property:albumReleaseDate "1974" ;
+    property:albumSpotifyURI "0q7u1QUZmKDTTa4WekSLST" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:035162b1-d276-5d04-b444-63465242c41a a media:Artist ;
+    property:artistName "DempagumiInc" ;
+    property:artistSpotifyURI "5gfv8DHqBG3s4jvrwZu6sp" .
+
+media:03c76b06-9e6a-5ecf-9ee5-e9781495dddf a media:Album ;
+    property:albumName "West Coast" ;
+    property:albumReleaseDate "2022-10-12" ;
+    property:albumSpotifyURI "5ZadVMjxNjnrG1EvtRaJ10" ;
+    property:albumTotalTracks "21" ;
+    property:albumType "compilation" .
+
+media:03db30a4-ad89-5afb-9d76-8d17b8c5dfd6 a media:Artist ;
+    property:artistName "Roberto Alagna" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:0464b284-58b6-5e4e-833d-22c2e4a96bf9 a media:Album ;
+    property:albumName "Erkeksen" ;
+    property:albumReleaseDate "1998" ;
+    property:albumSpotifyURI "6TaQbV1VqH1QUsgq6apGB3" ;
+    property:albumTotalTracks "14" ;
+    property:albumType "album" .
+
+media:04ca9d1c-770d-5c84-8aa1-c12c08373852 a media:Artist ;
+    property:artistName "Rahul Rajeev" ;
+    property:artistSpotifyURI "2sNH63LUog7Fnv7eYpmbzS" .
+
+media:067424a4-3f5d-5fdc-a7ce-5b16c30e60ae a media:Artist ;
+    property:artistName "Steve Hill" ;
+    property:artistSpotifyURI "5SoyQfSOYcegt3mXLdlqSl" .
+
+media:0730e097-897d-5929-ab9d-6e9d095c25fb a media:Artist ;
+    property:artistName "Jinny Ng" ;
+    property:artistSpotifyURI "38H8fIZL3gPwmB9R2dURYh" .
+
+media:0a3b3d1c-23d9-5c2e-87d9-d7160cf0fb21 a media:Artist ;
+    property:artistName "Emmy Rossum" ;
+    property:artistSpotifyURI "77IBDwZDA8BdAQ4Nb24rwl" .
+
+media:0aca80bf-74ec-5ec0-91b1-15254f339a57 a media:Artist ;
+    property:artistName "Anl Piyanc" ;
+    property:artistSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:0c5f4daf-ae98-5d82-984b-fae9f5172b5d a media:Artist ;
+    property:artistName "Gabriel Elias" ;
+    property:artistSpotifyURI "010LzZsO4eqQUdUv1f1y9m" .
+
+media:0dfa1a24-e043-5149-8b88-d337089d5c82 a media:Album ;
+    property:albumName "Headliners" ;
+    property:albumReleaseDate "2007-06-15" ;
+    property:albumSpotifyURI "1aye3Vcu2PEKSIGjcfqkrF" ;
+    property:albumTotalTracks "40" ;
+    property:albumType "compilation" .
+
+media:0e73ea87-61ae-57a1-8bb1-41c7d6e93a8a a media:Artist ;
+    property:artistName "Fiduma  Jeca" ;
+    property:artistSpotifyURI "1RZ7TBM8Q77L44fC1f97qU" .
+
+media:0f27c731-440b-5143-9dbb-9b9dbf0c16f6 a media:Album ;
+    property:albumName "Another Life" ;
+    property:albumReleaseDate "2022-01-21" ;
+    property:albumSpotifyURI "44jnGxgCSoyxygFmpyCiPy" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:0f8d5b28-fcc8-5b3a-88e9-49312cfe6bfb a media:Artist ;
+    property:artistName "Andy Hui" ;
+    property:artistSpotifyURI "5boCwYWY3cUg1Hhs25qspj" .
+
+media:10742cd0-4707-51f8-9aa5-cd6fe3fc9227 a media:Artist ;
+    property:artistName "Ollie" ;
+    property:artistSpotifyURI "3jvqqFqmRnZKZJXnOKV4zp" .
+
+media:1175e4d4-b818-546a-9811-ddba20a2c577 a media:Artist ;
+    property:artistName "Sangita Santhosham" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:14d3942e-e5b3-53e9-8a9e-0f4c3c994dce a media:Artist ;
+    property:artistName "Gana Muthu" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:1508c982-599e-5664-ae51-9a88cd456b99 a media:Album ;
+    property:albumName "Oscuro" ;
+    property:albumReleaseDate "1998-05-30" ;
+    property:albumSpotifyURI "69zmyMJrufLbIGGC4QO2al" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:152959f8-8db2-5f50-8af2-108b5b7728bd a media:Album ;
+    property:albumName "La Petite Sirne Bande originale franaise du Film" ;
+    property:albumReleaseDate "2014-01-01" ;
+    property:albumSpotifyURI "2mq1MbB5TtbMYwuyis5ZOA" ;
+    property:albumTotalTracks "20" ;
+    property:albumType "compilation" .
+
+media:16ff3929-7fdb-55d9-b697-665d393babad a media:Artist ;
+    property:artistName "Matt Redman" ;
+    property:artistSpotifyURI "0IAHW8BtLVBN2PVPiWo7zE" .
+
+media:17f52a3d-7482-5176-a847-2d39e52532a4 a media:Album ;
+    property:albumName "Paz Interior" ;
+    property:albumReleaseDate "2019-11-01" ;
+    property:albumSpotifyURI "1RZ7TBM8Q77L44fC1f97qU" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:1813eafa-508d-5456-be90-81ccf7c4a194 a media:Album ;
+    property:albumName "Chill in Brazil" ;
+    property:albumReleaseDate "2022-10-07" ;
+    property:albumSpotifyURI "0S5ys0PSO3o0GbfF2wTazO" ;
+    property:albumTotalTracks "23" ;
+    property:albumType "compilation" .
+
+media:18a7aab0-c18b-565a-902e-894be508b664 a media:Album ;
+    property:albumName "La Voz de los 80 Edicin 30 Aos" ;
+    property:albumReleaseDate "1984" ;
+    property:albumSpotifyURI "6Y57xXG66eowb6BqZfbd0U" ;
+    property:albumTotalTracks "10" ;
+    property:albumType "album" .
+
+media:192ff1fe-e2d7-5ecb-9fb1-512530ee5253 a media:Album ;
+    property:albumName "I Just Called" ;
+    property:albumReleaseDate "2022-05-27" ;
+    property:albumSpotifyURI "0H8Tclo4x4kbZruQtZFNSX" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:1a74f1ba-e703-5b63-9142-51bb1b9329d5 a media:Artist ;
+    property:artistName "Emrah Karakuyu" ;
+    property:artistSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:1b2e124c-e7bd-5e79-9fe2-32e63248ad55 a media:Artist ;
+    property:artistName "The Score" ;
+    property:artistSpotifyURI "6A6PDawvZIfnJHW40sBHzz" .
+
+media:1b532f6c-58b4-5d30-8abc-53f18d4d9883 a media:Artist ;
+    property:artistName "Refuzion" ;
+    property:artistSpotifyURI "1WF4RTvSeDTOQBD9epYwEi" .
+
+media:1d24ebfc-a470-5702-87b6-aabb4a953e13 a media:Artist ;
+    property:artistName "Elton John" ;
+    property:artistSpotifyURI "3D15FZXmjfna7aFfKmEajd" .
+
+media:1eb15e7d-e198-52e5-b4c8-293ea24e23b5 a media:Artist ;
+    property:artistName "Lisa Stansfield" ;
+    property:artistSpotifyURI "0KWHBuP8AItTgQUePYcdvc" .
+
+media:1ef34c65-be65-550d-a5dc-a9dc59838d8c a media:Album ;
+    property:albumName "Lyckost" ;
+    property:albumReleaseDate "2011-04-20" ;
+    property:albumSpotifyURI "7dAy3lwzP9aAP5NujoVa83" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:1f0e7690-c4e5-590f-a0bb-b0495e93079e a media:Artist ;
+    property:artistName "Prince Swanny" ;
+    property:artistSpotifyURI "5Gzm3nV4Jg9w1PQPMAiZSi" .
+
+media:20146485-609e-52f2-974e-41fcb572a6ac a media:Artist ;
+    property:artistName "Glen" ;
+    property:artistSpotifyURI "6TaQbV1VqH1QUsgq6apGB3" .
+
+media:209ade6f-d836-5c71-aaf5-12f2039ba204 a media:Album ;
+    property:albumName "94 unleashed" ;
+    property:albumReleaseDate "2018-11-16" ;
+    property:albumSpotifyURI "3VlD9L4CDMpVILVDOuTkvw" ;
+    property:albumTotalTracks "2" ;
+    property:albumType "single" .
+
+media:20e679fd-46ce-5e37-840e-7e84be77042d a media:Artist ;
+    property:artistName "Rob Tissera" ;
+    property:artistSpotifyURI "5SoyQfSOYcegt3mXLdlqSl" .
+
+media:22785226-8b31-5617-a5ec-5a448dfb1cfa a media:Artist ;
+    property:artistName "Cooltime" ;
+    property:artistSpotifyURI "5mkjplHZNNa8ebq0ZEucBh" .
+
+media:232341d5-4e40-5338-93b7-1255f55c3ee2 a media:Artist ;
+    property:artistName "Lack Of Interest" ;
+    property:artistSpotifyURI "17q6rFV6f8G4MKtUg7mWxe" .
+
+media:2345f980-d976-5678-8d09-d2eb11082d12 a media:Artist ;
+    property:artistName "Manoj Muntashir" ;
+    property:artistSpotifyURI "3ySVdXje5nm31d7vL3jNV3" .
+
+media:23b2e102-021c-53f4-a90c-840727fc5dd4 a media:Artist ;
+    property:artistName "Lauana Prado" ;
+    property:artistSpotifyURI "0qKucyXpu3wqyu57WSuPfZ" .
+
+media:27588047-03e1-5e07-bad3-1bfd8234f38c a media:Artist ;
+    property:artistName "Latto" ;
+    property:artistSpotifyURI "0H8Tclo4x4kbZruQtZFNSX" .
+
+media:28499cbb-1043-5812-8c7e-c6b3558f26fc a media:Artist ;
+    property:artistName "Arivu" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:28561df4-027e-56a2-a9ec-26a85e977718 a media:Artist ;
+    property:artistName "Roj" ;
+    property:artistSpotifyURI "3VlD9L4CDMpVILVDOuTkvw" .
+
+media:288f5dbf-48ea-5d8d-b9ea-8cf51609c1ef a media:Artist ;
+    property:artistName "Ingrid Andress" ;
+    property:artistSpotifyURI "6KBEi0APTBDw4xY0pHdFxl" .
+
+media:28c53613-c3c1-5f5b-8a7b-4d238d2b6fac a media:Album ;
+    property:albumName "Urumi Original Motion Picture Soundtrack" ;
+    property:albumReleaseDate "2011-07-01" ;
+    property:albumSpotifyURI "4lrKVSLsKc7R8ggs1SX08n" ;
+    property:albumTotalTracks "7" ;
+    property:albumType "album" .
+
+media:28d3fef3-4146-5605-80a4-e5ff0c93bb91 a media:Artist ;
+    property:artistName "Tobee" ;
+    property:artistSpotifyURI "4DeQMfE4mEkEjTZFmcIy85" .
+
+media:29fae028-83ec-5ae8-83fb-831906cda52b a media:Album ;
+    property:albumName "Sorry For Writing All The Songs About You Acoustic" ;
+    property:albumReleaseDate "2018-09-07" ;
+    property:albumSpotifyURI "7CETR23Us2ET1iXIKhF5Ju" ;
+    property:albumTotalTracks "6" ;
+    property:albumType "single" .
+
+media:2ac0414a-5dd0-5c12-b2c4-59df23305243 a media:Artist ;
+    property:artistName "Nigel Sparks" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:2b7374de-4777-5616-90b0-5ad974b8418e a media:Artist ;
+    property:artistName "Mc Digo STC" ;
+    property:artistSpotifyURI "3knUp342DsZsUmcY62m1vU" .
+
+media:2b966f8e-1fa9-592c-9220-a4033717a8eb a media:Artist ;
+    property:artistName "Walter Keiser" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:2f57bf4d-e646-5639-94e6-7bad1f49c9ae a media:Album ;
+    property:albumName "The Platters" ;
+    property:albumReleaseDate "1956-09-10" ;
+    property:albumSpotifyURI "1ntGJDSakqsaw1KhptKrB5" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:2ffd3577-7669-58e2-bc0b-00a1774ab4ca a media:Album ;
+    property:albumName "ATLAS" ;
+    property:albumReleaseDate "2017-10-13" ;
+    property:albumSpotifyURI "6A6PDawvZIfnJHW40sBHzz" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:304776b2-2252-5229-82cd-d2a75b72ac51 a media:Album ;
+    property:albumName "Jetzt ist der Teufel los" ;
+    property:albumReleaseDate "2017-06-16" ;
+    property:albumSpotifyURI "4DeQMfE4mEkEjTZFmcIy85" ;
+    property:albumTotalTracks "20" ;
+    property:albumType "album" .
+
+media:305ef26f-1315-578b-ba01-d26d418a1e1a a media:Artist ;
+    property:artistName "Wisin  Yandel" ;
+    property:artistSpotifyURI "3Eo7rOfvXRzGq68b9PVfZE" .
+
+media:32aadbf8-462c-533d-9179-de46d321adca a media:Artist ;
+    property:artistName "Nikolay Kopylov" ;
+    property:artistSpotifyURI "6pcKE146x55SPk6g3Cnhq1" .
+
+media:32bcd6c3-f6a5-555f-9652-b6845b0e6599 a media:Artist ;
+    property:artistName "Pedro Haldemann" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:32ec1c26-b073-5bfe-9bb0-8672007ac5da a media:Artist ;
+    property:artistName "Psychomantra" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:33a3b8c4-6717-5f3a-8495-672e3145cd7c a media:Album ;
+    property:albumName "Ibb  Obb Original Soundtrack" ;
+    property:albumReleaseDate "2013-08-11" ;
+    property:albumSpotifyURI "1rv3RSx1Dky10W7G94otkw" ;
+    property:albumTotalTracks "26" ;
+    property:albumType "album" .
+
+media:35e6c75e-9d76-59b3-8f32-1c912cfa0faf a media:Artist ;
+    property:artistName "Kavitha Gopi" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:3676862a-ff5d-5527-a204-07d4bdd13fc4 a media:Artist ;
+    property:artistName "Bullet For My Valentine" ;
+    property:artistSpotifyURI "3iWlbqAaoIR7H7gyO3a6rV" .
+
+media:36bf4ce3-e107-55b7-aef3-0290f7a27842 a media:Album ;
+    property:albumName "Dil Chahta Hai" ;
+    property:albumReleaseDate "2001-06-22" ;
+    property:albumSpotifyURI "2tO0QPdCA0jgDBshTuYYkc" ;
+    property:albumTotalTracks "9" ;
+    property:albumType "album" .
+
+media:396550c1-e513-584a-8282-1c62bed956a3 a media:Artist ;
+    property:artistName "Christoph Stiefel" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:39a25c77-ea4c-58f0-b1a5-fe3b8ccd0420 a media:Artist ;
+    property:artistName "Turquoise Palms" ;
+    property:artistSpotifyURI "7KpA2ZOdXXU7ymU05JmAv0" .
+
+media:3a4eb608-0922-55ef-81f6-c028a9933e1c a media:Artist ;
+    property:artistName "Viernes Verde" ;
+    property:artistSpotifyURI "69zmyMJrufLbIGGC4QO2al" .
+
+media:3b170810-3547-569d-aa5c-10aee760697e a media:Artist ;
+    property:artistName "Hybrid" ;
+    property:artistSpotifyURI "14PS1WSKEDcU0CeioZpGvy" .
+
+media:3c833c31-1b4d-552e-98af-ec4c069adecc a media:Album ;
+    property:albumName "Youre Dead" ;
+    property:albumReleaseDate "2014-10-06" ;
+    property:albumSpotifyURI "6CTG85NJI1Wm60pxTSRNwL" ;
+    property:albumTotalTracks "19" ;
+    property:albumType "album" .
+
+media:409e91cc-9b83-5c6d-90e0-16bda48b8a7f a media:Album ;
+    property:albumName "The Phantom Of The Opera Original Motion Picture Soundtrack / Deluxe Edition" ;
+    property:albumReleaseDate "2004-12-10" ;
+    property:albumSpotifyURI "77IBDwZDA8BdAQ4Nb24rwl" ;
+    property:albumTotalTracks "25" ;
+    property:albumType "album" .
+
+media:40c9e1c5-387c-5a3f-af62-d0b56ff15cc8 a media:Artist ;
+    property:artistName "Holly Humberstone" ;
+    property:artistSpotifyURI "5ZadVMjxNjnrG1EvtRaJ10" .
+
+media:40f5a123-d20e-5430-aa05-f9c37f0a9040 a media:Artist ;
+    property:artistName "Marcelo Markes" ;
+    property:artistSpotifyURI "3yc4ioKMDoCW1QwzD5C9oC" .
+
+media:420d3247-e31c-5a0d-850d-8d85f1330763 a media:Album ;
+    property:albumName "Eternal Nightmare" ;
+    property:albumReleaseDate "2018-07-13" ;
+    property:albumSpotifyURI "23vSivmGgbH4KpIzhUNCGl" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:4267a37e-2f79-56bb-95c0-e352edfa7e29 a media:Artist ;
+    property:artistName "Les lments" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:427383c4-8655-5336-a66c-f954e05f5f3d a media:Album ;
+    property:albumName "" ;
+    property:albumReleaseDate "2020-10-12" ;
+    property:albumSpotifyURI "0cSkn2l67csUljEy0EEBPn" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:454574ee-2a60-513d-ae62-0a50fe510fce a media:Artist ;
+    property:artistName "Babasonicos" ;
+    property:artistSpotifyURI "5gUXLgX9nLGb1AEZTSKOQm" .
+
+media:465ade4d-39ed-578c-a678-4bc46980b945 a media:Artist ;
+    property:artistName "Emi Flemming" ;
+    property:artistSpotifyURI "6wlUttkKh85t9MLZokg29e" .
+
+media:477740b2-87cd-5cc1-b0b6-a8efab414d70 a media:Album ;
+    property:albumName "Bis - Negritude Junior" ;
+    property:albumReleaseDate "2000-01-01" ;
+    property:albumSpotifyURI "4eBBprodHvNoxSVvSjfrcg" ;
+    property:albumTotalTracks "27" ;
+    property:albumType "album" .
+
+media:47e2f486-fd2d-5340-8abc-cf840c1ddc6e a media:Album ;
+    property:albumName "Astronautin Hernan Cattaneo  Soundexile Remix" ;
+    property:albumReleaseDate "2022-02-25" ;
+    property:albumSpotifyURI "7yvIz3Y02CxYDOY7JczOqc" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:486d8fa7-eaee-59f8-810f-9417eeb7ac35 a media:Artist ;
+    property:artistName "BB King" ;
+    property:artistSpotifyURI "5x7Oxaa9EEIx9nw17CC5yW" .
+
+media:489eb309-a50d-553e-8259-335e98dd6a5e a media:Artist ;
+    property:artistName "Los Prisioneros" ;
+    property:artistSpotifyURI "6Y57xXG66eowb6BqZfbd0U" .
+
+media:4a5d729f-fe35-5d65-95e0-0214a4059d67 a media:Album ;
+    property:albumName "Mahola" ;
+    property:albumReleaseDate "2021-02-04" ;
+    property:albumSpotifyURI "7KpA2ZOdXXU7ymU05JmAv0" ;
+    property:albumTotalTracks "3" ;
+    property:albumType "single" .
+
+media:4a7ce582-bcb9-5242-90f9-407bcd16bf91 a media:Artist ;
+    property:artistName "Keian" ;
+    property:artistSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:4cb494b6-f446-53a0-b5f8-6f5ffd0648d8 a media:Artist ;
+    property:artistName "Sheezay" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:4d253a65-fa02-59cd-80e1-7e2792ef88ec a media:Artist ;
+    property:artistName "Escape the Fate" ;
+    property:artistSpotifyURI "77tR4iQgyQTAnhhuPik3ZP" .
+
+media:4de2fd7a-440e-5ca7-b909-66f63602a04c a media:Artist ;
+    property:artistName "Kidd Santhe" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:4eaa6117-ea8d-52e3-8378-09e78d6bb5d5 a media:Album ;
+    property:albumName "Msica Pracurar Brasileira" ;
+    property:albumReleaseDate "2020-11-27" ;
+    property:albumSpotifyURI "010LzZsO4eqQUdUv1f1y9m" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:5054c55f-ee75-5498-bb0c-e17602b1331d a media:Artist ;
+    property:artistName "Mohammed Aziz" ;
+    property:artistSpotifyURI "0fg3tcKxZiPI6n5dZa8Dy9" .
+
+media:51f3d382-054e-52c9-8276-ce17a41b578f a media:Artist ;
+    property:artistName "Negritude Junior" ;
+    property:artistSpotifyURI "4eBBprodHvNoxSVvSjfrcg" .
+
+media:51f4b907-2419-5196-9ab6-56e4e48bef2a a media:Artist ;
+    property:artistName "Eva Eastwood" ;
+    property:artistSpotifyURI "7dAy3lwzP9aAP5NujoVa83" .
+
+media:526a188f-6c41-5af1-95b0-96841ae6f93c a media:Album ;
+    property:albumName "Bollywood Melody Queen Alka Yagnik" ;
+    property:albumReleaseDate "2016-07-01" ;
+    property:albumSpotifyURI "0fg3tcKxZiPI6n5dZa8Dy9" ;
+    property:albumTotalTracks "20" ;
+    property:albumType "album" .
+
+media:52a7be6d-0a0c-5ed9-a603-215aadb494ed a media:Artist ;
+    property:artistName "Pink Floyd" ;
+    property:artistSpotifyURI "2dxfyqdrI8XVOT3H1YcOsU" .
+
+media:52e4c533-2e03-5409-a498-325984c04fa4 a media:Album ;
+    property:albumName "Dancing with the Lion" ;
+    property:albumReleaseDate "1989-05-08" ;
+    property:albumSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:5306ab66-9079-5ee1-9bd5-9726426e4cd3 a media:Artist ;
+    property:artistName "Lawrence Soosai" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:53748f22-82e9-5a8a-a0a8-ea33df4a6acc a media:Album ;
+    property:albumName "Bizet Carmen" ;
+    property:albumReleaseDate "2003-02-25" ;
+    property:albumSpotifyURI "63Gs26xnO7C7DizhIXwVsW" ;
+    property:albumTotalTracks "68" ;
+    property:albumType "album" .
+
+media:53fae4a7-6605-5d43-975b-0d542b53032d a media:Artist ;
+    property:artistName "Matthias Ziegler" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:546f4951-980d-5b08-bfe7-8c351ec632e1 a media:Artist ;
+    property:artistName "MC Liro" ;
+    property:artistSpotifyURI "3knUp342DsZsUmcY62m1vU" .
+
+media:54ae80e4-457e-5796-9e37-e1c2d7e8a84c a media:Artist ;
+    property:artistName "Anstandslos  Durchgeknallt" ;
+    property:artistSpotifyURI "6wlUttkKh85t9MLZokg29e" .
+
+media:55bd9fd8-3d5d-55c9-8d85-e844ea62d18f a media:Album ;
+    property:albumName "Sekiz" ;
+    property:albumReleaseDate "2013-01-01" ;
+    property:albumSpotifyURI "24WxherbUpdXB1lUTRsqmJ" ;
+    property:albumTotalTracks "10" ;
+    property:albumType "compilation" .
+
+media:56500e78-4830-5a58-9108-f764c9d26857 a media:Artist ;
+    property:artistName "Switche Stylomannavan" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:56909c52-ce62-57ce-8d26-abe50c9803fe a media:Artist ;
+    property:artistName "Palavrantiga" ;
+    property:artistSpotifyURI "0JPeg9MFek6EFFQn9aoSRC" .
+
+media:56a5baaa-359d-5fa5-9d7c-1b76f5d33056 a media:Album ;
+    property:albumName "The Poison Deluxe Version" ;
+    property:albumReleaseDate "2007-06-12" ;
+    property:albumSpotifyURI "3iWlbqAaoIR7H7gyO3a6rV" ;
+    property:albumTotalTracks "17" ;
+    property:albumType "album" .
+
+media:5744ea24-c5a1-5bd7-8894-0c5f494c00f4 a media:Artist ;
+    property:artistName "Afrika Bambaataa" ;
+    property:artistSpotifyURI "1aye3Vcu2PEKSIGjcfqkrF" .
+
+media:57b064f4-266c-5a8e-b9a2-b213ae8b426c a media:Album ;
+    property:albumName "A Very 60s Christmas" ;
+    property:albumReleaseDate "2022-10-18" ;
+    property:albumSpotifyURI "7jkfwumh6cQYFsIsqPJ7ps" ;
+    property:albumTotalTracks "24" ;
+    property:albumType "compilation" .
+
+media:58be2b82-d25c-5060-8032-a3ce120419ca a media:Artist ;
+    property:artistName "Vida Reluz" ;
+    property:artistSpotifyURI "5Z5QyXraBxMH5c1q5eQKfD" .
+
+media:5bccaedd-df31-5633-8346-79dbf27cd589 a media:Artist ;
+    property:artistName "Opeth" ;
+    property:artistSpotifyURI "5uFU647R2yVxTSvjKk3iSz" .
+
+media:5c2e0837-0113-5063-9eb5-69a0f8e0db43 a media:Artist ;
+    property:artistName "Ryo" ;
+    property:artistSpotifyURI "2wJJNgD6GrKoQ435VxTRv6" .
+
+media:5d1c5ec1-71d1-5db3-9ec9-e591ebfe469c a media:Album ;
+    property:albumName "Breaking Dad" ;
+    property:albumReleaseDate "2014-10-07" ;
+    property:albumSpotifyURI "0aGP7lKPk7LO0czSXg6xUY" ;
+    property:albumTotalTracks "14" ;
+    property:albumType "album" .
+
+media:5d23bc89-d913-550c-a015-8dc812f2452b a media:Artist ;
+    property:artistName "Gary Clark Jr" ;
+    property:artistSpotifyURI "4rVW6XqAsSaf5vOwc8FREW" .
+
+media:5e46365b-d4bc-597e-9580-2c9390ddc6ee a media:Artist ;
+    property:artistName "The Cascades" ;
+    property:artistSpotifyURI "0apq2ENNMlYg9Os1osfJ3Y" .
+
+media:61ac3430-15e5-5469-adbf-e55ff2dca938 a media:Artist ;
+    property:artistName "Michel Plasson" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:6255fa7d-d795-557a-94c0-661a9b8529da a media:Album ;
+    property:albumName "On Hits" ;
+    property:albumReleaseDate "2002-01-01" ;
+    property:albumSpotifyURI "5boCwYWY3cUg1Hhs25qspj" ;
+    property:albumTotalTracks "18" ;
+    property:albumType "album" .
+
+media:62ffe741-ecac-59a5-82d4-da973464ff21 a media:Album ;
+    property:albumName "Christmas Best Hits 2022" ;
+    property:albumReleaseDate "2022-10-19" ;
+    property:albumSpotifyURI "3vgcVnO40B63dtKBJ54RLJ" ;
+    property:albumTotalTracks "98" ;
+    property:albumType "compilation" .
+
+media:634e438f-f9a3-56a1-b78f-729b574215f3 a media:Artist ;
+    property:artistName "J Balvin" ;
+    property:artistSpotifyURI "1YQk5vR4YduJFoSzr0kvKT" .
+
+media:63d7c13c-011d-51da-835b-a5298f83794f a media:Artist ;
+    property:artistName "Adam Jensen" ;
+    property:artistSpotifyURI "424GDxARRXRaZ7Mla9EDI2" .
+
+media:644697ae-f802-5ded-813b-09b98200043d a media:Artist ;
+    property:artistName "Karthik Manickavasakam" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:67f45c4b-aac4-5be6-bdb2-4ed0cafd657f a media:Artist ;
+    property:artistName "Stephan Bodzin" ;
+    property:artistSpotifyURI "7yvIz3Y02CxYDOY7JczOqc" .
+
+media:680850fb-7c15-5da8-b640-e48850399fa5 a media:Artist ;
+    property:artistName "Netherfriends" ;
+    property:artistSpotifyURI "2MTwDvHo3Mc8lKp7FeEHJJ" .
+
+media:68fe9e6c-9376-5534-a7ff-4e3d489b03c2 a media:Artist ;
+    property:artistName "Lady Kash" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:6c01544b-b0f1-5e20-8a6a-23fb6824622a a media:Album ;
+    property:albumName "Hardstyle Top 100 - Best Of 2019" ;
+    property:albumReleaseDate "2019-11-22" ;
+    property:albumSpotifyURI "51xMNT1LnMCfAte5L4lKew" ;
+    property:albumTotalTracks "100" ;
+    property:albumType "compilation" .
+
+media:6c043c6c-6752-53e5-95cf-01137af614ee a media:Album ;
+    property:albumName "Indianola Mississippi Seeds" ;
+    property:albumReleaseDate "1970-01-01" ;
+    property:albumSpotifyURI "5x7Oxaa9EEIx9nw17CC5yW" ;
+    property:albumTotalTracks "9" ;
+    property:albumType "album" .
+
+media:6cd82020-ae1c-5493-bb6a-5d58454b2b59 a media:Artist ;
+    property:artistName "Sam Hunt" ;
+    property:artistSpotifyURI "6KBEi0APTBDw4xY0pHdFxl" .
+
+media:6d3e41dd-f563-5f61-a601-e3dd2a1320e3 a media:Artist ;
+    property:artistName "Rita Thyagarajan" ;
+    property:artistSpotifyURI "4lrKVSLsKc7R8ggs1SX08n" .
+
+media:6f2189e3-d759-56e4-82fb-16fd0e601ae1 a media:Artist ;
+    property:artistName "MS Krsna" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:6f413e6a-7bda-5585-91c5-1194c663cbe0 a media:Album ;
+    property:albumName "Ungrateful Deluxe" ;
+    property:albumReleaseDate "2013-05-14" ;
+    property:albumSpotifyURI "77tR4iQgyQTAnhhuPik3ZP" ;
+    property:albumTotalTracks "13" ;
+    property:albumType "album" .
+
+media:71b92a23-8a69-5d52-9d4c-357d4c34918c a media:Album ;
+    property:albumName "Linda" ;
+    property:albumReleaseDate "2022-05-10" ;
+    property:albumSpotifyURI "3knUp342DsZsUmcY62m1vU" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:72a5c7bd-c883-52f4-9de3-928522ccdada a media:Artist ;
+    property:artistName "Bring Me The Horizon" ;
+    property:artistSpotifyURI "2gT72HL4Y84K2Mle3miAMJ" .
+
+media:72f1b7de-49ab-5220-812b-f8dab49069bd a media:Album ;
+    property:albumName "Bigger Love" ;
+    property:albumReleaseDate "2020-06-19" ;
+    property:albumSpotifyURI "4rVW6XqAsSaf5vOwc8FREW" ;
+    property:albumTotalTracks "16" ;
+    property:albumType "album" .
+
+media:73b30176-5123-5ceb-9733-bc9f50a45f98 a media:Artist ;
+    property:artistName "Mark OConnor" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:73b6a5a0-e35f-5ce0-a52c-f0933923f83e a media:Artist ;
+    property:artistName "Kavita Krishnamurthy" ;
+    property:artistSpotifyURI "2tO0QPdCA0jgDBshTuYYkc" .
+
+media:74f85b9f-bb47-5827-af23-9433657f4192 a media:Artist ;
+    property:artistName "Andreas Vollenweider" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:77aa5acc-466f-5aec-864a-1943cb5152dd a media:Album ;
+    property:albumName "poems of the past" ;
+    property:albumReleaseDate "2020-05-29" ;
+    property:albumSpotifyURI "7lfoJaJRuVB43jLr4Ydi00" ;
+    property:albumTotalTracks "6" ;
+    property:albumType "single" .
+
+media:783ea85f-edf1-5e60-a2eb-9f511c5ff5cc a media:Album ;
+    property:albumName "Starye russkie narodnye derevenskie i gorodskie pesni Ch 3" ;
+    property:albumReleaseDate "1988" ;
+    property:albumSpotifyURI "0YKcxflIvNtQd2Chh5EWrg" ;
+    property:albumTotalTracks "16" ;
+    property:albumType "album" .
+
+media:793de3d9-00e0-5b78-ac92-c7dc6f5553ad a media:Artist ;
+    property:artistName "Dean Martin" ;
+    property:artistSpotifyURI "3vgcVnO40B63dtKBJ54RLJ" .
+
+media:7a2b3bbb-3e1d-549e-990a-f0fa33e1b068 a media:Artist ;
+    property:artistName "RADWIMPS" ;
+    property:artistSpotifyURI "5mEqD00bdFcsiVd0MfvEeF" .
+
+media:7a57310f-09c0-5c5e-9b39-7480de7a5056 a media:Album ;
+    property:albumName "Bollywood Music - Kumar Sanu At His Best Vol 2" ;
+    property:albumReleaseDate "2016-07-01" ;
+    property:albumSpotifyURI "7dbO1k9ryxPFJG0fvYBffu" ;
+    property:albumTotalTracks "15" ;
+    property:albumType "album" .
+
+media:7aa3c2c3-74a4-5f4a-8e9f-d5e95c4c004e a media:Album ;
+    property:albumName "The Essential Janis Joplin" ;
+    property:albumReleaseDate "2003-01-14" ;
+    property:albumSpotifyURI "4KVMPQ5ei2LKBaeMmcOBBA" ;
+    property:albumTotalTracks "30" ;
+    property:albumType "compilation" .
+
+media:7beae274-084b-563e-ba6a-11a68d58098c a media:Artist ;
+    property:artistName "Godsmack" ;
+    property:artistSpotifyURI "0bKZa2zldftYPRrSRscmG2" .
+
+media:7bf91053-36ae-5350-b3fd-1b69e33c49b7 a media:Artist ;
+    property:artistName "The 357 STring Band" ;
+    property:artistSpotifyURI "6DfBZGpdwKxoPdUDqL1NPP" .
+
+media:7c63530c-7b1b-5b7b-a676-366336fd2bcd a media:Album ;
+    property:albumName "Berlinette" ;
+    property:albumReleaseDate "2003-04-07" ;
+    property:albumSpotifyURI "3KmlvEQ4drHLcJinD0dnmX" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:7d265cb5-073d-5886-91f2-8ae088095ab6 a media:Album ;
+    property:albumName "Infame" ;
+    property:albumReleaseDate "2003-10-19" ;
+    property:albumSpotifyURI "5gUXLgX9nLGb1AEZTSKOQm" ;
+    property:albumTotalTracks "14" ;
+    property:albumType "album" .
+
+media:7dac7cb9-1561-56dd-9dec-01737aaa29df a media:Artist ;
+    property:artistName "Kumar Sanu" ;
+    property:artistSpotifyURI "7dbO1k9ryxPFJG0fvYBffu" .
+
+media:7f054ee3-7780-523b-9665-110f9e383bfb a media:Artist ;
+    property:artistName "Steve Rannazzisi" ;
+    property:artistSpotifyURI "0aGP7lKPk7LO0czSXg6xUY" .
+
+media:7fcfc099-d74f-583e-b468-f351169edb97 a media:Artist ;
+    property:artistName "Rabbit Mac" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:7fdf60df-b36c-54d9-a8e8-6e8c901781a3 a media:Album ;
+    property:albumName "Wide Angle" ;
+    property:albumReleaseDate "1999-09-13" ;
+    property:albumSpotifyURI "14PS1WSKEDcU0CeioZpGvy" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:80a55853-5bd5-58ba-8939-897b75179061 a media:Album ;
+    property:albumName "Navratri Special Bhajans Vol-4" ;
+    property:albumReleaseDate "2017-03-28" ;
+    property:albumSpotifyURI "5GfhNTwnaC2dUWMKhnLmWX" ;
+    property:albumTotalTracks "10" ;
+    property:albumType "compilation" .
+
+media:80c660d9-5027-503c-b81c-40511ce7fd13 a media:Artist ;
+    property:artistName "Inva Mula" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:81479063-2ef5-57fc-a4a2-0a8fe2e49373 a media:Album ;
+    property:albumName "Raiz Ao Vivo" ;
+    property:albumReleaseDate "2022-06-29" ;
+    property:albumSpotifyURI "0qKucyXpu3wqyu57WSuPfZ" ;
+    property:albumTotalTracks "21" ;
+    property:albumType "album" .
+
+media:81d82ffb-a88f-5ad1-9762-2bd9cfbf4416 a media:Artist ;
+    property:artistName "Yann Beuron" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:82bd8297-73e3-5057-a1b5-978772a1ff95 a media:Album ;
+    property:albumName "Palavrantiga Vol 1" ;
+    property:albumReleaseDate "2008-04-15" ;
+    property:albumSpotifyURI "0JPeg9MFek6EFFQn9aoSRC" ;
+    property:albumTotalTracks "6" ;
+    property:albumType "album" .
+
+media:8570548c-0f4d-5c2b-bb00-afe1d567f56d a media:Album ;
+    property:albumName "Nin Chundil Pookum Moham" ;
+    property:albumReleaseDate "2021-01-04" ;
+    property:albumSpotifyURI "2sNH63LUog7Fnv7eYpmbzS" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:868e875b-12f7-53bc-9634-be41c884cf03 a media:Artist ;
+    property:artistName "Margaretha Zorbala" ;
+    property:artistSpotifyURI "6KU1Jwa2vjyiR8hLAGxMBh" .
+
+media:87b17442-bb66-5387-a199-18742b1db1a5 a media:Artist ;
+    property:artistName "Jerry Rivera" ;
+    property:artistSpotifyURI "1EQjhHKwMO2zL4cFrlNQ9I" .
+
+media:87cd857b-2619-5dd1-a1ed-39c66d43871b a media:Album ;
+    property:albumName "Fire  Hail" ;
+    property:albumReleaseDate "2008-01-01" ;
+    property:albumSpotifyURI "6DfBZGpdwKxoPdUDqL1NPP" ;
+    property:albumTotalTracks "15" ;
+    property:albumType "album" .
+
+media:884a5aba-911c-5c0b-bbd6-9912ed01f8e6 a media:Artist ;
+    property:artistName "Shaan" ;
+    property:artistSpotifyURI "2tO0QPdCA0jgDBshTuYYkc" .
+
+media:8b9d1f98-c0ff-55cf-b5da-6f1f6cd72bce a media:Album ;
+    property:albumName "Let the Vultures In" ;
+    property:albumReleaseDate "2018-11-02" ;
+    property:albumSpotifyURI "3SemJVQCsUo0K3QGN7pIXu" ;
+    property:albumTotalTracks "5" ;
+    property:albumType "single" .
+
+media:8bc4e902-ccd6-56d1-a9ee-90b11221a267 a media:Artist ;
+    property:artistName "Bone Killa" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:8e5467bc-457a-51ce-8fb0-ed6065a5640c a media:Artist ;
+    property:artistName "Ezhel" ;
+    property:artistSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:8e78c737-aff3-5b2e-97bb-0b829d1dfb34 a media:Artist ;
+    property:artistName "Patrick Wilson" ;
+    property:artistSpotifyURI "77IBDwZDA8BdAQ4Nb24rwl" .
+
+media:8eef32f8-0dd5-54f4-af82-c97f49b837ef a media:Artist ;
+    property:artistName "NEIKED" ;
+    property:artistSpotifyURI "0H8Tclo4x4kbZruQtZFNSX" .
+
+media:91a91650-4a41-5c3b-9652-39be82f67fef a media:Artist ;
+    property:artistName "Sibi Mathew Alex" ;
+    property:artistSpotifyURI "2sNH63LUog7Fnv7eYpmbzS" .
+
+media:9254a7fe-7ab1-5e2f-b488-d7147354db66 a media:Album ;
+    property:albumName "Weaver " ;
+    property:albumReleaseDate "2021-06-04" ;
+    property:albumSpotifyURI "6zZNEML6EssNesPUyVMEdB" ;
+    property:albumTotalTracks "8" ;
+    property:albumType "album" .
+
+media:926f70ed-ce45-5515-ac34-2d5486ca0a05 a media:Artist ;
+    property:artistName "Kettel" ;
+    property:artistSpotifyURI "1rv3RSx1Dky10W7G94otkw" .
+
+media:93090d32-0921-5df1-9bc2-0998b407d91d a media:Album ;
+    property:albumName "Diamonds Deluxe" ;
+    property:albumReleaseDate "2017-11-10" ;
+    property:albumSpotifyURI "3D15FZXmjfna7aFfKmEajd" ;
+    property:albumTotalTracks "51" ;
+    property:albumType "compilation" .
+
+media:9316ff35-8dad-501d-bdf8-f874fbafbbc5 a media:Artist ;
+    property:artistName "Andr Aquino" ;
+    property:artistSpotifyURI "3yc4ioKMDoCW1QwzD5C9oC" .
+
+media:93aa3fca-299f-5d8c-b367-32d1a71e9bb5 a media:Artist ;
+    property:artistName "Flying Lotus" ;
+    property:artistSpotifyURI "6CTG85NJI1Wm60pxTSRNwL" .
+
+media:94c59df3-3a42-5ab7-8e76-75eb3c7bc913 a media:Artist ;
+    property:artistName "Gustavo Mioto" ;
+    property:artistSpotifyURI "1RZ7TBM8Q77L44fC1f97qU" .
+
+media:94dfd9ea-9765-55af-b627-76304c40c2f9 a media:Artist ;
+    property:artistName "Kilink" ;
+    property:artistSpotifyURI "7LxeS6YSxwhKkEevTfBEFm" .
+
+media:95b684b6-83a5-5a07-afb0-3815fe43e897 a media:Album ;
+    property:albumName "inc" ;
+    property:albumReleaseDate "2020-04-15" ;
+    property:albumSpotifyURI "5gfv8DHqBG3s4jvrwZu6sp" ;
+    property:albumTotalTracks "14" ;
+    property:albumType "album" .
+
+media:98a44878-b7e9-5a99-bdf3-fece8cc991dd a media:Album ;
+    property:albumName "80s 100 Remixes" ;
+    property:albumReleaseDate "2014-03-07" ;
+    property:albumSpotifyURI "0KWHBuP8AItTgQUePYcdvc" ;
+    property:albumTotalTracks "100" ;
+    property:albumType "compilation" .
+
+media:9bf4fde0-ff06-5375-bd14-60cd0316efe9 a media:Album ;
+    property:albumName "Around the World La la La" ;
+    property:albumReleaseDate "2019-10-01" ;
+    property:albumSpotifyURI "1WF4RTvSeDTOQBD9epYwEi" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:9c62c6fb-8dc3-55c1-bf21-74d87f63f70c a media:Artist ;
+    property:artistName "Des Rocs" ;
+    property:artistSpotifyURI "3SemJVQCsUo0K3QGN7pIXu" .
+
+media:9d800d28-49f1-53c9-91d5-0bdceb7b1677 a media:Album ;
+    property:albumName "Melhor Lugar Ao Vivo" ;
+    property:albumReleaseDate "2019-07-08" ;
+    property:albumSpotifyURI "3yc4ioKMDoCW1QwzD5C9oC" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:9e455b63-0e40-55e4-abb3-5033229cdb84 a media:Album ;
+    property:albumName "Easy Country" ;
+    property:albumReleaseDate "2022-10-14" ;
+    property:albumSpotifyURI "6KBEi0APTBDw4xY0pHdFxl" ;
+    property:albumTotalTracks "30" ;
+    property:albumType "compilation" .
+
+media:a07573a1-8260-5af4-a4ce-8155de5045ed a media:Artist ;
+    property:artistName "MC Torugo" ;
+    property:artistSpotifyURI "3knUp342DsZsUmcY62m1vU" .
+
+media:a0b1bc9a-216b-5f81-ac5c-e8d2500eebe0 a media:Artist ;
+    property:artistName "Andy Hendrickson" ;
+    property:artistSpotifyURI "5eq83Qv4nFwht3tL3UCKdK" .
+
+media:a0dbc18d-4d81-5bec-b729-ea7d6a0852f8 a media:Artist ;
+    property:artistName "Soundexile" ;
+    property:artistSpotifyURI "7yvIz3Y02CxYDOY7JczOqc" .
+
+media:a169c1f8-d79d-5998-bbc1-b67c35b1e077 a media:Album ;
+    property:albumName "10000 Reasons Live" ;
+    property:albumReleaseDate "2011-01-01" ;
+    property:albumSpotifyURI "0IAHW8BtLVBN2PVPiWo7zE" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:a1eb8048-c154-5071-851e-674b21c66c38 a media:Album ;
+    property:albumName "Halloween y diversin para peques" ;
+    property:albumReleaseDate "2022-10-14" ;
+    property:albumSpotifyURI "5mkjplHZNNa8ebq0ZEucBh" ;
+    property:albumTotalTracks "30" ;
+    property:albumType "compilation" .
+
+media:a25ec608-ca06-5f21-81e5-e1d6cbc82919 a media:Album ;
+    property:albumName "En dag nr du blir stor" ;
+    property:albumReleaseDate "2021-11-26" ;
+    property:albumSpotifyURI "1h6NF4OErecHfANsoGV32h" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:a66c90fc-cc45-5bf6-aa2f-329439b42823 a media:Artist ;
+    property:artistName "coldrain" ;
+    property:artistSpotifyURI "2wJJNgD6GrKoQ435VxTRv6" .
+
+media:a84ae5c9-b7d9-5115-b9df-bd5d9aed7c60 a media:Album ;
+    property:albumName "TVB" ;
+    property:albumReleaseDate "2015-08-04" ;
+    property:albumSpotifyURI "38H8fIZL3gPwmB9R2dURYh" ;
+    property:albumTotalTracks "18" ;
+    property:albumType "compilation" .
+
+media:aa330b3c-c8a9-5676-9be1-6cfd21755228 a media:Artist ;
+    property:artistName "Powfu" ;
+    property:artistSpotifyURI "7lfoJaJRuVB43jLr4Ydi00" .
+
+media:ab883a1a-997f-5e5e-80ef-090df6a042c5 a media:Artist ;
+    property:artistName "Soheil Soheili" ;
+    property:artistSpotifyURI "3VlD9L4CDMpVILVDOuTkvw" .
+
+media:ac0f3d58-6599-5a91-8622-169f41f6e326 a media:Album ;
+    property:albumName "O Snehame - Malayalam Christian Devotional Songs" ;
+    property:albumReleaseDate "2011-02-09" ;
+    property:albumSpotifyURI "4ZOpLB1ztn2OeoMmhMUPkf" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "compilation" .
+
+media:ad8f68bd-adc7-5144-a7e3-a3e636af3360 a media:Artist ;
+    property:artistName "Chelsea Grin" ;
+    property:artistSpotifyURI "23vSivmGgbH4KpIzhUNCGl" .
+
+media:af7d1441-a4d9-559a-bf1b-d334834f9a88 a media:Album ;
+    property:albumName "Vai-Lapalam All Star Freemix" ;
+    property:albumReleaseDate "2018-10-26" ;
+    property:albumSpotifyURI "4GJna3gI2IO4AGWISiSgLk" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:b0bb36d8-b06c-5da9-8442-9713e2fd7896 a media:Album ;
+    property:albumName "A Jobii Christmas" ;
+    property:albumReleaseDate "2019-10-04" ;
+    property:albumSpotifyURI "44JYujAyLBlYFoXpoJwDSo" ;
+    property:albumTotalTracks "6" ;
+    property:albumType "single" .
+
+media:b14756f0-a6da-5c50-bf67-6f06f32a982d a media:Artist ;
+    property:artistName "Blake Rules" ;
+    property:artistSpotifyURI "2MTwDvHo3Mc8lKp7FeEHJJ" .
+
+media:b2f30b01-fb83-57b5-bfac-300dfd2ce24c a media:Artist ;
+    property:artistName "Grard Rinaldi" ;
+    property:artistSpotifyURI "2mq1MbB5TtbMYwuyis5ZOA" .
+
+media:b36c186e-3368-5c3c-bedd-6e6d9ebb7495 a media:Album ;
+    property:albumName "Your Name" ;
+    property:albumReleaseDate "2016-08-24" ;
+    property:albumSpotifyURI "5mEqD00bdFcsiVd0MfvEeF" ;
+    property:albumTotalTracks "27" ;
+    property:albumType "album" .
+
+media:b47b0467-788e-5462-a310-ba7a89849aff a media:Album ;
+    property:albumName "Mozart - All Day Classics" ;
+    property:albumReleaseDate "2022-10-16" ;
+    property:albumSpotifyURI "5YrGHFnhNZou6fvM7VBQKi" ;
+    property:albumTotalTracks "495" ;
+    property:albumType "compilation" .
+
+media:b527f4ba-f0f5-5763-8ccf-56d2362fd04f a media:Artist ;
+    property:artistName "Wolfgang Amadeus Mozart" ;
+    property:artistSpotifyURI "5YrGHFnhNZou6fvM7VBQKi" .
+
+media:b593118b-08f8-5252-8930-780b74b023af a media:Album ;
+    property:albumName "From Void To Void" ;
+    property:albumReleaseDate "2012-12-01" ;
+    property:albumSpotifyURI "15d5KE4LxgkqkwFLeuwzIL" ;
+    property:albumTotalTracks "10" ;
+    property:albumType "album" .
+
+media:b68c1051-bbd3-59de-8010-392d167e731a a media:Artist ;
+    property:artistName "Kinderen voor Kinderen" ;
+    property:artistSpotifyURI "79Ds3vQ6WRClv8zdkj2404" .
+
+media:b9d25a42-610c-5d7c-aa31-e1ffecfc8b5e a media:Album ;
+    property:albumName "konichiwa" ;
+    property:albumReleaseDate "2021-03-19" ;
+    property:albumSpotifyURI "5tLWpmZIBoa8F4GT3hZMjl" ;
+    property:albumTotalTracks "3" ;
+    property:albumType "single" .
+
+media:bb67ccee-575b-511a-bb3a-2587a0e505a1 a media:Artist ;
+    property:artistName "Anne-Marie" ;
+    property:artistSpotifyURI "0H8Tclo4x4kbZruQtZFNSX" .
+
+media:bc3d38da-86dc-5776-ad77-80f9ecf8cdec a media:Album ;
+    property:albumName "Ek Villain" ;
+    property:albumReleaseDate "2014-05-28" ;
+    property:albumSpotifyURI "3ySVdXje5nm31d7vL3jNV3" ;
+    property:albumTotalTracks "6" ;
+    property:albumType "compilation" .
+
+media:bcb568ad-7b1d-5ae9-b9e2-f57a326b9cf6 a media:Album ;
+    property:albumName "40 Golden Greats" ;
+    property:albumReleaseDate "1977" ;
+    property:albumSpotifyURI "2oRn0QuaWQ1hragGQ7XZ9s" ;
+    property:albumTotalTracks "40" ;
+    property:albumType "compilation" .
+
+media:bcbc9252-d24b-5815-9248-075e2e556476 a media:Album ;
+    property:albumName "Milongueros" ;
+    property:albumReleaseDate "2007" ;
+    property:albumSpotifyURI "3TjXPh8bOY0K6K5WnReqH8" ;
+    property:albumTotalTracks "16" ;
+    property:albumType "album" .
+
+media:bd021c5f-d395-5947-a32e-3db9ea8692cc a media:Artist ;
+    property:artistName "Vitor Kley" ;
+    property:artistSpotifyURI "010LzZsO4eqQUdUv1f1y9m" .
+
+media:be006bc4-ba20-5608-9288-21f56ea73726 a media:Album ;
+    property:albumName "Cardio Workout Vol 8" ;
+    property:albumReleaseDate "2022-02-25" ;
+    property:albumSpotifyURI "5SoyQfSOYcegt3mXLdlqSl" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "compilation" .
+
+media:be140602-df03-535d-b8fc-bb25a6f55527 a media:Album ;
+    property:albumName "Ghost Reveries" ;
+    property:albumReleaseDate "2005-08-30" ;
+    property:albumSpotifyURI "5uFU647R2yVxTSvjKk3iSz" ;
+    property:albumTotalTracks "8" ;
+    property:albumType "album" .
+
+media:c05a21d3-1c9a-52e7-916b-674112a8e6d4 a media:Artist ;
+    property:artistName "Ankit Tiwari" ;
+    property:artistSpotifyURI "3ySVdXje5nm31d7vL3jNV3" .
+
+media:c1ac0831-15de-5f43-a6fd-43e04bacadd8 a media:Album ;
+    property:albumName "Awake at Night" ;
+    property:albumReleaseDate "1994-07-02" ;
+    property:albumSpotifyURI "5bpRBSk8PWLSDORhAUkEv5" ;
+    property:albumTotalTracks "14" ;
+    property:albumType "album" .
+
+media:c27768f1-e70e-57ab-9e97-0a63367a132c a media:Album ;
+    property:albumName "Dry Bar Comedy Presents Left Field" ;
+    property:albumReleaseDate "2020-06-11" ;
+    property:albumSpotifyURI "5eq83Qv4nFwht3tL3UCKdK" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:c2905212-da8e-50e7-9d32-1ef5d72fb627 a media:Artist ;
+    property:artistName "Eu Nice" ;
+    property:artistSpotifyURI "44jnGxgCSoyxygFmpyCiPy" .
+
+media:c3e6101e-c11f-55c4-a185-80dfa9541814 a media:Artist ;
+    property:artistName "Janis Joplin" ;
+    property:artistSpotifyURI "4KVMPQ5ei2LKBaeMmcOBBA" .
+
+media:c74d6a3b-338f-5d7e-9dc6-dbe0c3d2f1c5 a media:Artist ;
+    property:artistName "Isabelle Cals" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:c75e72cb-45b3-5119-ad69-020c4d556a31 a media:Album ;
+    property:albumName "Faceless" ;
+    property:albumReleaseDate "2003-04-08" ;
+    property:albumSpotifyURI "0bKZa2zldftYPRrSRscmG2" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:c75fce4c-e738-597f-97c2-bc2434529893 a media:Artist ;
+    property:artistName "Nomad" ;
+    property:artistSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:c7976aff-0f1f-57c8-b455-0d9919657df0 a media:Album ;
+    property:albumName "Halloween 2022 Perreo Vol 3" ;
+    property:albumReleaseDate "2022-10-11" ;
+    property:albumSpotifyURI "1YQk5vR4YduJFoSzr0kvKT" ;
+    property:albumTotalTracks "25" ;
+    property:albumType "compilation" .
+
+media:c7a84540-b711-539c-a8ab-d98f1de30c83 a media:Artist ;
+    property:artistName "Roshan Jamrock" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:c7f37dc4-592d-5dfe-b3c0-0e551e73fa55 a media:Artist ;
+    property:artistName "Leftfield" ;
+    property:artistSpotifyURI "1aye3Vcu2PEKSIGjcfqkrF" .
+
+media:c7fbb1ff-7984-5c82-b6f6-9fe929b47775 a media:Artist ;
+    property:artistName "MC Syze" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:c8663772-db3b-5d7d-b625-a583e14c9e6a a media:Artist ;
+    property:artistName "Bugz" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:c957f544-0f84-5768-89b5-f1c324163732 a media:Album ;
+    property:albumName "    / Two Guitars Ancient Russian Romances" ;
+    property:albumReleaseDate "2008-10-28" ;
+    property:albumSpotifyURI "6pcKE146x55SPk6g3Cnhq1" ;
+    property:albumTotalTracks "25" ;
+    property:albumType "album" .
+
+media:c96bd66c-b86e-53f4-b9c9-dc762708b2b2 a media:Artist ;
+    property:artistName "Balan Kash" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:c994214f-0620-54ac-a1bd-917574293bf4 a media:Album ;
+    property:albumName "30 - Lachen is gezond" ;
+    property:albumReleaseDate "2009-08-01" ;
+    property:albumSpotifyURI "79Ds3vQ6WRClv8zdkj2404" ;
+    property:albumTotalTracks "25" ;
+    property:albumType "album" .
+
+media:c9fe9d25-1b0d-54dd-a04c-62fd0739ac85 a media:Artist ;
+    property:artistName "Esteban Morgado" ;
+    property:artistSpotifyURI "3TjXPh8bOY0K6K5WnReqH8" .
+
+media:cab260da-c481-5e33-a0b3-7b1a2be824fb a media:Album ;
+    property:albumName "Oro Salsero" ;
+    property:albumReleaseDate "1990" ;
+    property:albumSpotifyURI "1EQjhHKwMO2zL4cFrlNQ9I" ;
+    property:albumTotalTracks "20" ;
+    property:albumType "compilation" .
+
+media:cd4cda15-d7d7-551a-a6d5-2a0586afb356 a media:Artist ;
+    property:artistName "Nationalteatern" ;
+    property:artistSpotifyURI "0q7u1QUZmKDTTa4WekSLST" .
+
+media:d032fa52-066d-5289-95da-3c9a14dd21cc a media:Artist ;
+    property:artistName "Hernan Cattaneo" ;
+    property:artistSpotifyURI "7yvIz3Y02CxYDOY7JczOqc" .
+
+media:d0cc876d-53ef-5dbc-bcb0-cc43b3e38219 a media:Artist ;
+    property:artistName "Milton Nascimento" ;
+    property:artistSpotifyURI "0S5ys0PSO3o0GbfF2wTazO" .
+
+media:d10c3d07-d1f4-54e7-b421-30d3ae88ab17 a media:Artist ;
+    property:artistName "Baaroot" ;
+    property:artistSpotifyURI "15d5KE4LxgkqkwFLeuwzIL" .
+
+media:d1325023-b79e-5fff-94fa-6c75c4605782 a media:Artist ;
+    property:artistName "John Legend" ;
+    property:artistSpotifyURI "4rVW6XqAsSaf5vOwc8FREW" .
+
+media:d21c0ab8-3902-5928-a44b-b83d9b6c12e6 a media:Artist ;
+    property:artistName "Big Brother  The Holding Company" ;
+    property:artistSpotifyURI "4KVMPQ5ei2LKBaeMmcOBBA" .
+
+media:d22654ba-5674-58fe-ad31-dbe900b21a7c a media:Artist ;
+    property:artistName "Andrew Lloyd Webber" ;
+    property:artistSpotifyURI "77IBDwZDA8BdAQ4Nb24rwl" .
+
+media:d24d1cb5-ba19-5694-b48d-1dd3377a16b8 a media:Artist ;
+    property:artistName "Benjamin Ingrosso" ;
+    property:artistSpotifyURI "1h6NF4OErecHfANsoGV32h" .
+
+media:d47aa335-318d-518b-ace6-e45925ed6d42 a media:Album ;
+    property:albumName "THE SIDE EFFECTS" ;
+    property:albumReleaseDate "2019-08-28" ;
+    property:albumSpotifyURI "2wJJNgD6GrKoQ435VxTRv6" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:d4c01b52-57de-53c8-865e-e35c5c24b82d a media:Artist ;
+    property:artistName "Georges Bizet" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:d4dc32c4-e245-5fd2-963d-1558da73c29e a media:Artist ;
+    property:artistName "Job Kurian" ;
+    property:artistSpotifyURI "4lrKVSLsKc7R8ggs1SX08n" .
+
+media:d692d025-a51d-59c9-a2a7-9f703823267d a media:Album ;
+    property:albumName "The Division Bell" ;
+    property:albumReleaseDate "1994" ;
+    property:albumSpotifyURI "2dxfyqdrI8XVOT3H1YcOsU" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:d7c164d9-6afd-5812-a5f2-95aca26632f8 a media:Artist ;
+    property:artistName "Clara Mae" ;
+    property:artistSpotifyURI "7CETR23Us2ET1iXIKhF5Ju" .
+
+media:d8f9abae-70bb-52a8-ad70-361d2c7f52ba a media:Album ;
+    property:albumName "Music To Park By 20 Great Romantic Hits" ;
+    property:albumReleaseDate "2022-10-13" ;
+    property:albumSpotifyURI "0apq2ENNMlYg9Os1osfJ3Y" ;
+    property:albumTotalTracks "20" ;
+    property:albumType "compilation" .
+
+media:da209003-fa15-5878-9b4d-5e394f706437 a media:Artist ;
+    property:artistName "DJ Ruckes" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:daa87369-08de-5645-afff-3f600e0df756 a media:Artist ;
+    property:artistName "Ellen Allien" ;
+    property:artistSpotifyURI "3KmlvEQ4drHLcJinD0dnmX" .
+
+media:dbf6d341-17c1-542f-bb17-2c324761a557 a media:Artist ;
+    property:artistName "Jaleh Negari" ;
+    property:artistSpotifyURI "6zZNEML6EssNesPUyVMEdB" .
+
+media:dcbd2f12-0d89-5c42-a97c-e77ef3e1ab45 a media:Artist ;
+    property:artistName "LiSA" ;
+    property:artistSpotifyURI "0cSkn2l67csUljEy0EEBPn" .
+
+media:ddb92ca2-97ac-5e45-b5f9-4ca3e357735c a media:Artist ;
+    property:artistName "Angela Gheorghiu" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:dea47370-cbb1-5077-9962-aba28753da91 a media:Artist ;
+    property:artistName "heroku" ;
+    property:artistSpotifyURI "5tLWpmZIBoa8F4GT3hZMjl" .
+
+media:e10c003e-9c7e-5562-b275-535f88894627 a media:Artist ;
+    property:artistName "Cliff Richard" ;
+    property:artistSpotifyURI "2oRn0QuaWQ1hragGQ7XZ9s" .
+
+media:e1b065ad-5c0d-5f8a-914f-ee3d38917941 a media:Album ;
+    property:albumName "Rangarattinam From Natchathiram Nagargiradhu" ;
+    property:albumReleaseDate "2022-08-08" ;
+    property:albumSpotifyURI "6dmb2PApaoXVYWHgljp8IT" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:e288d8ff-35fe-5eaa-bdf7-175a6cfdf0db a media:Artist ;
+    property:artistName "Noisecontrollers" ;
+    property:artistSpotifyURI "51xMNT1LnMCfAte5L4lKew" .
+
+media:e3a0a15e-be42-5f98-8dfb-40129b1173dc a media:Artist ;
+    property:artistName "Tenma" ;
+    property:artistSpotifyURI "6dmb2PApaoXVYWHgljp8IT" .
+
+media:e41e60ee-f491-5f57-96c7-79bb396db5e1 a media:Artist ;
+    property:artistName "Erik Smith" ;
+    property:artistSpotifyURI "5YrGHFnhNZou6fvM7VBQKi" .
+
+media:e4d5f4ae-8904-5577-baee-a0345aeacf68 a media:Album ;
+    property:albumName "Ao Vivo Sem Abuso" ;
+    property:albumReleaseDate "2003-07-29" ;
+    property:albumSpotifyURI "4q3FCy1LpkERlvZ6wTscLe" ;
+    property:albumTotalTracks "17" ;
+    property:albumType "album" .
+
+media:e5927594-0827-517c-bfc4-945a96f04dbb a media:Artist ;
+    property:artistName "Coldcut" ;
+    property:artistSpotifyURI "0KWHBuP8AItTgQUePYcdvc" .
+
+media:e6e51b5d-bf13-53dd-bdf1-5b4d3e0996ff a media:Artist ;
+    property:artistName "Zhanna Bichevskaya" ;
+    property:artistSpotifyURI "0YKcxflIvNtQd2Chh5EWrg" .
+
+media:e6eb0693-d02a-5d20-933f-428294f8f8ef a media:Artist ;
+    property:artistName "Elizabeth Vidal" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:e7dcea84-7367-56a3-85ce-155154d4cd34 a media:Album ;
+    property:albumName "Dominant" ;
+    property:albumReleaseDate "2022-02-18" ;
+    property:albumSpotifyURI "5Gzm3nV4Jg9w1PQPMAiZSi" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:ea09bc84-aae3-5f73-a7b1-abd2f092c661 a media:Artist ;
+    property:artistName "Harvinth Skin" ;
+    property:artistSpotifyURI "4GJna3gI2IO4AGWISiSgLk" .
+
+media:eafdcde6-eef3-5510-851b-0c376f726d9c a media:Artist ;
+    property:artistName "Toini  The Tomcats" ;
+    property:artistSpotifyURI "5bpRBSk8PWLSDORhAUkEv5" .
+
+media:eb695916-2f74-5534-8266-dfc78df9152e a media:Artist ;
+    property:artistName "Anuradha Paudwal" ;
+    property:artistSpotifyURI "5GfhNTwnaC2dUWMKhnLmWX" .
+
+media:efe88adb-35f4-52cc-a60b-c8b9f77cb29d a media:Artist ;
+    property:artistName "Klubfiller" ;
+    property:artistSpotifyURI "5SoyQfSOYcegt3mXLdlqSl" .
+
+media:f03969dc-0fde-5536-abe1-37f29379651b a media:Artist ;
+    property:artistName "Orchestre National Du Capitole De Toulouse" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:f078b8d7-463d-5c7e-ba09-d74f21c79bd6 a media:Artist ;
+    property:artistName "Red" ;
+    property:artistSpotifyURI "24WxherbUpdXB1lUTRsqmJ" .
+
+media:f10576c4-a135-5254-a17b-33783d9621ef a media:Album ;
+    property:albumName "Trapped Inside" ;
+    property:albumReleaseDate "2014-09-22" ;
+    property:albumSpotifyURI "17q6rFV6f8G4MKtUg7mWxe" ;
+    property:albumTotalTracks "24" ;
+    property:albumType "album" .
+
+media:f2fde5a2-feb1-500f-9d7b-0bdbf0ff1a9f a media:Artist ;
+    property:artistName "MC Lemos" ;
+    property:artistSpotifyURI "3knUp342DsZsUmcY62m1vU" .
+
+media:f30bdbee-721c-5336-9622-eac1625e6667 a media:Album ;
+    property:albumName "Esto No Se Le Dedica A Cualquiera" ;
+    property:albumReleaseDate "2022-10-07" ;
+    property:albumSpotifyURI "3Eo7rOfvXRzGq68b9PVfZE" ;
+    property:albumTotalTracks "25" ;
+    property:albumType "compilation" .
+
+media:f57b0221-ec98-58a8-bd09-b40332f7c2bc a media:Album ;
+    property:albumName "Kids Trap 3" ;
+    property:albumReleaseDate "2018-04-20" ;
+    property:albumSpotifyURI "2MTwDvHo3Mc8lKp7FeEHJJ" ;
+    property:albumTotalTracks "10" ;
+    property:albumType "album" .
+
+media:f5c51965-2b23-5fbf-b525-c352a1ca8ad8 a media:Artist ;
+    property:artistName "Jobii" ;
+    property:artistSpotifyURI "44JYujAyLBlYFoXpoJwDSo" .
+
+media:f5e3c00f-db58-51d3-99c1-a12d29a1c843 a media:Artist ;
+    property:artistName "Gerard Butler" ;
+    property:artistSpotifyURI "77IBDwZDA8BdAQ4Nb24rwl" .
+
+media:f6d15379-7050-5f6c-a60d-9a6acfd44db6 a media:Album ;
+    property:albumName "3 Akorun ntikam" ;
+    property:albumReleaseDate "2004-12-13" ;
+    property:albumSpotifyURI "7LxeS6YSxwhKkEevTfBEFm" ;
+    property:albumTotalTracks "12" ;
+    property:albumType "album" .
+
+media:f8d440fd-feb2-54a2-ab00-1f029a6203d0 a media:Artist ;
+    property:artistName "Latha Hentry" ;
+    property:artistSpotifyURI "4ZOpLB1ztn2OeoMmhMUPkf" .
+
+media:f90d1a03-4cc5-57c4-96a8-f4f5bb9ba21f a media:Album ;
+    property:albumName "Vida Reluz" ;
+    property:albumReleaseDate "1995-10-10" ;
+    property:albumSpotifyURI "5Z5QyXraBxMH5c1q5eQKfD" ;
+    property:albumTotalTracks "11" ;
+    property:albumType "album" .
+
+media:fa9490c4-c382-50ee-8238-4d1ee04744c8 a media:Album ;
+    property:albumName "The Mystic" ;
+    property:albumReleaseDate "2016-11-04" ;
+    property:albumSpotifyURI "424GDxARRXRaZ7Mla9EDI2" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:fb551759-a6ad-525f-acbd-3a428ece35e1 a media:Album ;
+    property:albumName "Party EP" ;
+    property:albumReleaseDate "2019-08-16" ;
+    property:albumSpotifyURI "6wlUttkKh85t9MLZokg29e" ;
+    property:albumTotalTracks "4" ;
+    property:albumType "single" .
+
+media:fcf8a141-a0fc-5563-8354-a39f152cb533 a media:Album ;
+    property:albumName "Attached" ;
+    property:albumReleaseDate "2021-06-11" ;
+    property:albumSpotifyURI "3jvqqFqmRnZKZJXnOKV4zp" ;
+    property:albumTotalTracks "1" ;
+    property:albumType "single" .
+
+media:fdef6a51-077c-5c5d-97fb-7b622fdea57f a media:Artist ;
+    property:artistName "Nicolas Rivenq" ;
+    property:artistSpotifyURI "63Gs26xnO7C7DizhIXwVsW" .
+
+media:897308ce-a216-54ac-b038-c15b23afda01 a media:Artist ;
+    property:artistName "The Platters" ;
+    property:artistSpotifyURI "1ntGJDSakqsaw1KhptKrB5",
+        "7jkfwumh6cQYFsIsqPJ7ps" .
+
+media:be5ac170-f2bc-51ad-b9de-f62b6878f392 a media:Artist ;
+    property:artistName "Alka Yagnik" ;
+    property:artistSpotifyURI "0fg3tcKxZiPI6n5dZa8Dy9",
+        "7dbO1k9ryxPFJG0fvYBffu" .
+

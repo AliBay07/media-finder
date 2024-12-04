@@ -7,14 +7,24 @@ import random
 import uuid
 import base64
 import io
+import os
 import rdflib
 import requests
+import time
 
 
 class MediaFinder:
 
-    def __init__(self, path):
-        self.sparql = SPARQLWrapper(path)
+    def __init__(self, base_url):
+        self.base_url = base_url
+        self.dataset_name = "media-finder"
+        self.auth = ("admin", "password")
+        self.sparql = None
+        self.wait_for_fuseki(self.base_url)
+        self.setup_database()
+
+        self.sparql = SPARQLWrapper(f"{self.base_url}/{self.dataset_name}/")
+
         model_path = "ssd_mobilenet_v2_coco_2018_03_29/saved_model"
         self.model = tf.saved_model.load(model_path)
         self.detect_fn = self.model.signatures['serving_default']
@@ -31,6 +41,42 @@ class MediaFinder:
             'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
             'scissors', 'teddy bear', 'hair drier', 'toothbrush'
         ]
+
+    def wait_for_fuseki(self, base_url, timeout=60):
+        start_time = time.time()
+        while time.time() - start_time < timeout:
+            try:
+                response = requests.get(f"{base_url}/$/ping")
+                if response.status_code == 200:
+                    return
+            except requests.ConnectionError:
+                time.sleep(2)
+        raise RuntimeError("Fuseki server did not become ready in time.")
+
+    def setup_database(self):
+        admin_url = f"{self.base_url}/$/datasets"
+        turtle_file_path = "media_ontology.ttl"
+
+        response = requests.post(
+            admin_url,
+            data={"dbName": self.dataset_name, "dbType": "tdb2"},
+            auth=self.auth
+        )
+        if response.status_code not in [200, 409]:
+            raise RuntimeError(f"Failed to create dataset: {response.reason}")
+
+        dataset_url = f"{self.base_url}/{self.dataset_name}/data"
+        if os.path.exists(turtle_file_path):
+            with open(turtle_file_path, "r") as turtle_file:
+                turtle_data = turtle_file.read()
+            response = requests.post(
+                dataset_url,
+                data=turtle_data,
+                headers={"Content-Type": "text/turtle"},
+                auth=self.auth
+            )
+            if response.status_code != 200:
+                raise RuntimeError(f"Failed to load data: {response.reason}")
 
     def detect_objects(self, image):
         """

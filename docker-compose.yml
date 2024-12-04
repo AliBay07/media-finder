@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  fuseki:
+    image: stain/jena-fuseki
+    ports:
+      - "3030:3030"
+    volumes:
+      - ./config/shiro.ini:/fuseki/shiro.ini
+    command: ["/jena-fuseki/fuseki-server"]
+    restart: always
+    container_name: fuseki-container
+
+  streamlit-app:
+    build: ./app
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+    depends_on:
+      - fuseki
+    restart: always
+    container_name: streamlit-app-container
+

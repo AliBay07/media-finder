@@ -6,7 +6,7 @@ from PIL import Image
 import base64
 import io
 
-media_finder = MediaFinder("http://localhost:3030/media-finder/")
+media_finder = MediaFinder("http://fuseki-container:3030")
 
 st.set_page_config(page_title="Media Finder", layout="wide")
 st.title("🎵 Media Finder")

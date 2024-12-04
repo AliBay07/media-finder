@@ -46,6 +46,10 @@ http://localhost:3030
 
 ### 3. Installation des dépendances Python 
 
+Retourner dans le dossier app :
+```bash
+cd ..
+```
 Installez les dépendances nécessaires :
 
 ```bash
@@ -53,12 +57,24 @@ pip install -r requirements.txt
 ```
 
 ### 4. Lancement de l'application
-#### 1. Naviguez vers le répertoire contenant l'application Streamlit :
-```bash
-cd app
-```
 
-#### 2. Lancez l'application avec la commande suivante :
+#### 1. Lancez l'application avec la commande suivante :
 ```bash
 streamlit run app.py
 ```
+
+### 5. Test de l'application 
+
+Voici quelques exemples pour tester le fonctionnement de l’application :
+
+#### 1. Recherche de morceaux
+
+- Utilisez la fonctionnalité de recherche pour trouver un morceau par son nom.
+- Par exemple, recherchez le morceau "wish".
+- Explorez les informations récupérées pour accéder à d’autres fonctionnalités, comme rechercher l’album ou l’artiste associé.
+
+#### 2. Recherche d’images
+
+- Ajoutez des images dans la base de données. Par exemple, ajoutez les images disponibles dans le dossier media-finder/images.
+- Effectuez une recherche avec le mot-clé "dog".
+- Les images contenant des chiens que vous avez ajoutées apparaîtront.
